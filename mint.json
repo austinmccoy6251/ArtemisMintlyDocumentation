@@ -48,6 +48,10 @@
       "pages": ["api-reference/authentication"]
     },
     {
+      "group": "test",
+      "pages": ["test"]
+    },
+    {
       "group": "Endpoint Examples",
       "pages": [
         "api-reference/endpoint/get",
