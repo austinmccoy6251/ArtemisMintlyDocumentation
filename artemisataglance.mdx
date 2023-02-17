@@ -46,7 +46,15 @@ Next, create a workspace by pressing the green “New Workspace” button on the
   ![title](https://d27n7fycrsusaz.cloudfront.net/details.PNG)
 </Accordion>
 <Accordion title="Place a few instances on the network">
-  You can put any content in here.
+  Now we can pull over to our network. Do this by clicking the “Instance Network” button in your project. The network is blank but we’re going to populate it with instances of our resources. Each time a resource appears on a network, that’s an “instance” of that resource. 
+  
+  We make the distinction between instances because each instance deserves its own documentation. If a script is used to process data from XYZ database in one place but is also used to process data from ABC database in another place, we must kame a distinction between those two because they’re running under different conditions.
+  
+  Creating a new instance is easy. Simply toggle on “Edit Mode” at the top of the network and press the “New Instance” button. Your cursor will transform to a square outline. Clicking on the network will place an instance inside that outline. 
+  
+  Once you click to place an instance a modal like the one below will instantly appear. This is where you name the instance and select its underlying resource. The “underlying resource” is the resource you’re making an instance of. It’s important to note that you designate the underlying resource by pasting in its ID number. (It’s best to have two tabs open when you’re creating instances: one with your catalog to copy instance IDs from and one to build your network in.)
+  
+  After you’ve created more than two instances you can start drawing lines to document how they relate. Make sure “Edit Mode” is still toggled on then click two instances. A modal like the one below will appear where you can designate the relationships between the instances in question. For example, you may have a database and the script that created it. Fortunately, there are a limited number of ways resources can be related – check out this page for a rundown of what they are. 
 </Accordion>
 <Accordion title="Review instance archive ">
   You can put any content in here.
