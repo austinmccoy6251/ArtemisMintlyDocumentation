@@ -27,26 +27,47 @@ Doing is the best learning, so let’s jump right in. This guide will walk you t
 <AccordionGroup>
   <Accordion title="Create a workspace and project">
   The first thing we need to do here is **add users to our organization.** These people can subsequently be added to our first workspace. The way we add members to an org is by clicking the "Settings" tab on the left side toolbar, clicking "Users" when it appears then opting to "Add User."
-    ![title](https://d27n7fycrsusaz.cloudfront.net/Adding+users+to+org.PNG)
+    <Frame caption="Adding a user to an org">
+  <img src="https://d27n7fycrsusaz.cloudfront.net/Adding+users+to+org.PNG" />
+</Frame>
     This will prompt us to add a user by their user ID. When someone gets an Artemis account they’ll be given an ID number – you need to get it from them and input it here to add them to your org.
     
 Next, **create a workspace** by pressing the green “New Workspace” button on the home page. Name your workspace when prompted then click it when it appears. 
-![title](https://d27n7fycrsusaz.cloudfront.net/new+workspace.PNG)
+    <Frame caption="Creating a workspace">
+  <img src="https://d27n7fycrsusaz.cloudfront.net/new+workspace.PNG" />
+</Frame>
+
     **Add users to the workspace** by going down to the “Users” tab. This time, you’ll see a prepopulated list of users that you’ve added to your org and you can select them by name.
-    ![title](https://d27n7fycrsusaz.cloudfront.net/adding+users+to+workspace.PNG)
+    <Frame caption="Adding users to a workspace">
+  <img src="https://d27n7fycrsusaz.cloudfront.net/adding+users+to+workspace.PNG" />
+</Frame>
     **Create a project** inside your workspace, enter that project and add some users to it using the same procedure you used to add users to the workspace.
-    ![title](https://d27n7fycrsusaz.cloudfront.net/new+project+create.PNG)
-    Because most data science projects are multifaceted, projects contain subprojects where the work actually occurs. Finally, **create a subproject** as seen below. Subprojects are automatically 
-    ![title](https://d27n7fycrsusaz.cloudfront.net/subproject.PNG)
+    <Frame caption="Creating a project inside the workspace">
+  <img src="https://d27n7fycrsusaz.cloudfront.net/new+project+create.PNG" />
+</Frame>
+
+    Because most data science projects are multifaceted, projects contain subprojects where the work actually occurs. Finally, **create a subproject** as seen below. Subprojects are automatically availalbe to the same userset that has access to the main project.
+    <Frame caption="Creating a subproject">
+  <img src="https://d27n7fycrsusaz.cloudfront.net/subproject.PNG" />
+</Frame>
+
     **To recap:** we've just set up your first workspace by adding users to your organization, creating a workspace and adding a project with a subproject inside that space. Now we're ready to get to work!
 </Accordion>
 <Accordion title="Create resources">
   Before you can place an instance of a resource on your network you need to create that resource in your team’s resource catalog. To do this, enter the project you’re working on and click the green “New Resource” button.
-  ![title](https://d27n7fycrsusaz.cloudfront.net/new+resource+click.PNG)
+  <Frame caption="Adding a new resource">
+  <img src="https://d27n7fycrsusaz.cloudfront.net/new+resource+click.PNG" />
+</Frame>
+
   Clicking “New Resource” will make a window that looks like this appear. This is where you name the resource, designate what type (database, script, model, etc.) and optionally type a few notes about it. Note that you can choose a preloaded type or create your own custom types. 
-![title](https://d27n7fycrsusaz.cloudfront.net/new+rec.PNG)
-  After entering this basic info about the resource a second screen will pop up where you can record details about it. Usually the most salient details will be its location so your team can access it. Check out a full breakdown of everything you can record here. 
-  ![title](https://d27n7fycrsusaz.cloudfront.net/details.PNG)
+  <Frame caption="This is the modal you'll use to name a resource and designate its type">
+  <img src="https://d27n7fycrsusaz.cloudfront.net/new+rec.PNG" />
+</Frame>
+
+  After entering this basic info about the resource a second screen will pop up where you can record details about it. Usually the most salient details will be its location so your team can access it. Check out a full breakdown of everything you can record here.
+  <Frame caption="Note where the 'Resource ID' is, this will be important later">
+  <img src="https://d27n7fycrsusaz.cloudfront.net/details.PNG" />
+</Frame>
 </Accordion>
 <Accordion title="Place instances on the network">
   Now we can pull over to our network. Do this by clicking the “Instance Network” button in your project. The network is blank but we’re going to populate it with instances of our resources. Each time a resource appears on a network, that’s an “instance” of that resource. 
