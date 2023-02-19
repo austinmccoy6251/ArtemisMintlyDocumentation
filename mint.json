@@ -49,7 +49,7 @@
     },
     {
       "group": "test",
-      "pages": ["test","artemisataglance", "resourcecatalog", "Instancenetwork" "gettingstarted"]
+      "pages": ["test","artemisataglance", "resourcecatalog", "Instancenetwork", "gettingstarted"]
     },
     {
       "group": "Endpoint Examples",
