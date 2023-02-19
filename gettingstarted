@@ -1,0 +1,76 @@
+## Getting Started
+Doing is the best learning, so let’s jump right in. This guide will walk you through how to set up and run your first project. 
+<AccordionGroup>
+  <Accordion title="Create a workspace and project">
+  The first thing we need to do here is **add users to our organization.** These people can subsequently be added to our first workspace. The way we add members to an org is by clicking the "Settings" tab on the left side toolbar, clicking "Users" when it appears then opting to "Add User."
+    <Frame caption="Adding a user to an org">
+  <img src="https://d27n7fycrsusaz.cloudfront.net/Adding+users+to+org.PNG" />
+</Frame>
+    This will prompt us to add a user by their user ID. When someone gets an Artemis account they’ll be given an ID number – you need to get it from them and input it here to add them to your org.
+    
+Next, **create a workspace** by pressing the green “New Workspace” button on the home page. Name your workspace when prompted then click it when it appears. 
+    <Frame caption="Creating a workspace">
+  <img src="https://d27n7fycrsusaz.cloudfront.net/new+workspace.PNG" />
+</Frame>
+
+    **Add users to the workspace** by going down to the “Users” tab. This time, you’ll see a prepopulated list of users that you’ve added to your org and you can select them by name.
+    <Frame caption="Adding users to a workspace">
+  <img src="https://d27n7fycrsusaz.cloudfront.net/adding+users+to+workspace.PNG" />
+</Frame>
+    **Create a project** inside your workspace, enter that project and add some users to it using the same procedure you used to add users to the workspace.
+    <Frame caption="Creating a project inside the workspace">
+  <img src="https://d27n7fycrsusaz.cloudfront.net/new+project+create.PNG" />
+</Frame>
+
+    Because most data science projects are multifaceted, projects contain subprojects where the work actually occurs. Finally, **create a subproject** as seen below. Subprojects are automatically availalbe to the same userset that has access to the main project.
+    <Frame caption="Creating a subproject">
+  <img src="https://d27n7fycrsusaz.cloudfront.net/subproject.PNG" />
+</Frame>
+
+    **To recap:** we've just set up your first workspace by adding users to your organization, creating a workspace and adding a project with a subproject inside that space. Now we're ready to get to work!
+</Accordion>
+<Accordion title="Create resources">
+  Before you can place an instance of a resource on your network you need to create that resource in your team’s resource catalog. To do this, enter the project you’re working on and click the green “New Resource” button.
+  <Frame caption="Adding a new resource">
+  <img src="https://d27n7fycrsusaz.cloudfront.net/new+resource+click.PNG" />
+</Frame>
+
+  Clicking “New Resource” will make a window that looks like this appear. This is where you name the resource, designate what type (database, script, model, etc.) and optionally type a few notes about it. Note that you can choose a preloaded type or create your own custom types. 
+  <Frame caption="This is the modal you'll use to name a resource and designate its type">
+  <img src="https://d27n7fycrsusaz.cloudfront.net/new+rec.PNG" />
+</Frame>
+
+  After entering this basic info about the resource a second screen will pop up where you can record details about it. Usually the most salient details will be its location so your team can access it. Check out a full breakdown of everything you can record here.
+  <Frame caption="Note where the 'Resource ID' is, this will be important later">
+  <img src="https://d27n7fycrsusaz.cloudfront.net/details.PNG" />
+</Frame>
+</Accordion>
+<Accordion title="Place instances on the network">
+  Now we can pull over to our network. Do this by clicking the “Instance Network” button in your project. The network is blank but we’re going to populate it with instances of our resources. Each time a resource appears on a network, that’s an “instance” of that resource. 
+  
+  We make the distinction between instances because each instance deserves its own documentation. If a script is used to process data from XYZ database in one place but is also used to process data from ABC database in another place, we must kame a distinction between those two because they’re running under different conditions.
+  
+  Creating a new instance is easy. Simply toggle on “Edit Mode” at the top of the network and press the “New Instance” button. Your cursor will transform to a square outline. Clicking on the network will place an instance inside that outline. 
+  <Frame caption="This is what it looks like to position an instance after you click the 'Create Instance' button">
+  <img src="https://d27n7fycrsusaz.cloudfront.net/adding+to+network.PNG" />
+</Frame>
+  
+  Once you click to place an instance a modal like the one below will instantly appear. This is where you name the instance and select its underlying resource. The “underlying resource” is the resource you’re making an instance of. It’s important to note that you designate the underlying resource by pasting in its ID number. (It’s best to have two tabs open when you’re creating instances: one with your catalog to copy instance IDs from and one to build your network in.)
+  <Frame caption="This is where you can create the details of your instance">
+  <img src="https://d27n7fycrsusaz.cloudfront.net/creating+instance.PNG" />
+</Frame>
+
+  
+  After you’ve created more than two instances you can start drawing lines to document how they relate. Make sure “Edit Mode” is still toggled on then click two instances. A modal like the one below will appear where you can designate the relationships between the instances in question. For example, you may have a database and the script that created it. Fortunately, there are a limited number of ways resources can be related – check out this page for a rundown of what they are. 
+  <Frame caption="This is where you denote how two instances relate to one another">
+  <img src="https://d27n7fycrsusaz.cloudfront.net/indicating+relationship.PNG" />
+</Frame>
+</Accordion>
+<Accordion title="Review instance archive ">
+While the network is the easiest way to see all your instances at once you can also view them all in a catalog format in the “Instance Archive.” The archive is visually similar to the resource catalog but displays all the instances you’ve created on your network. 
+<Frame caption="The instance archive looks similar to the resource catalog">
+  <img src="https://d27n7fycrsusaz.cloudfront.net/instance+archive+pic.PNG" />
+</Frame>
+
+</Accordion>
+</AccordionGroup>
