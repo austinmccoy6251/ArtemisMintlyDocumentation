@@ -54,7 +54,7 @@
     {
       "group": "Detailed Breakdowns",
       "pages": ["resourcecatalog", "Instancenetwork"]
-    },
+    }
   ],
   "footerSocials": {
     "twitter": "https://twitter.com/mintlify",
