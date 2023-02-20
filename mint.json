@@ -26,10 +26,6 @@
   ],
   "navigation": [
     {
-      "group": "API Documentation",
-      "pages": ["api-reference/authentication"]
-    },
-    {
       "group": "Start Here",
       "pages": ["artemisataglance", "firstwalkthrough"]
     },
