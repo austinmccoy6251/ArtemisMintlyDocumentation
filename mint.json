@@ -48,8 +48,12 @@
       "pages": ["api-reference/authentication"]
     },
     {
-      "group": "test",
-      "pages": ["test","artemisataglance", "resourcecatalog", "Instancenetwork", "gettingstarted"]
+      "group": "Start Here",
+      "pages": ["artemisataglance", "gettingstarted"]
+    },
+    {
+      "group": "Detailed Breakdowns",
+      "pages": ["resourcecatalog", "Instancenetwork"]
     },
     {
       "group": "Endpoint Examples",
