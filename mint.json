@@ -31,7 +31,7 @@
     },
     {
       "group": "Detailed Breakdowns",
-      "pages": ["resourcecatalog", "Instnetwork", "instancearchive"]
+      "pages": ["resourcecatalog", "Instnetwork", "instancearchive", "othertools"]
     }
   ],
   "footerSocials": {
