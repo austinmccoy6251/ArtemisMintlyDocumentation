@@ -26,7 +26,47 @@ Once you press the “Create Instance” button, it will show up on your network
 * **Settings:** Lets you change who can edit the instance
 Here’s a video illustrating this process: 
 
-<iframe height="100%" width="100%" style="aspect-ratio: 16 / 9;" src="https://www.youtube.com/embed/MysBvJnbDFg"> </iframe>
+<iframe src="https://www.youtube.com/embed/MysBvJnbDFg"> </iframe>
 
 
+## Documenting Instances
+Once you have more than one instance on your network it’s time to document how they relate. The video below walks you through that process.
+<iframe src="https://www.youtube.com/embed/ZSnY7xeaubU"> </iframe>
+At 0:28 in the video we start working with a modal that lets us document how the two resources are related. There are four different types of relationships we can note. They are:
+
+* **Origin:** An origin is a resource that generates another one. For example, a script may be the origin of an output like a graph. 
+
+* **Input Dataset:** As the name suggests, this is a resource that inputs data to another. For example, a database may be the input data for a script.
+
+* **Output Artifact:** This is a resource that was output by another resource. For example, a graph may be the output of a script. 
+
+* **Deployment:** Sometimes an instance might be used by another instance. This is said to be its deployment. For example, a database can be deployed to be used by a script.
+
+
+After you document instance relationships you can click on an instance and this modal will appear.
+<Frame caption="This is the modal that displays details about your instance">
+  <img src="https://d27n7fycrsusaz.cloudfront.net/documenting+instance+modal.PNG" />
+</Frame>
+This screen shows you details about the resource. Here’s what each tab does, in order of appearance: 
+
+* **Overview Tab:** Displays general information about the instance.
+* 
+* **Resource Details Tab:** Displays information about the instance's underlying resource.
+* 
+* **Resource Content Tab:** Reports where the underlying resource is located.
+* 
+* **Input Datasets:** Indicates which (if any) datasets the instance relies on. The info on this tab is created by the relationships you define between instances.
+* 
+* **Output Artifacts:** Indicates which (if any) instances are output by the one you’re looking at. The info on this tab is created by the relationships you define between instances.
+
+* **Origin:** If your instance was created by another one, that’s reported here. The info on this tab is created by the relationships you define between instances.
+* 
+* **Deployments:** If your instance is used by another instance, that’s reported here. The info on this tab is created by the relationships you define between instances.
+* 
+* **Network:** Clicking this button displays the instance on the network
+* 
+* **Comments:** Any user can add comments on your instance
+* 
+* **History:** This tab reports every action done to an instance
+* 
 
