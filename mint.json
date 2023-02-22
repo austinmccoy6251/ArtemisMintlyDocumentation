@@ -1,42 +1,85 @@
 {
-  "$schema": "https://mintlify.com/schema.json",
-  "name": "Starter Kit",
+  "name": "Artemis",
   "logo": {
-    "dark": "/logo/dark.png",
-    "light": "/logo/light.png"
+    "light": "/logo/light.svg",
+    "dark": "/logo/dark.svg"
   },
+  "versions": ["v1.6"],
   "favicon": "/favicon.png",
   "colors": {
-    "primary": "#0069ED",
-    "light": "#4D9CFF",
-    "dark": "#0050B4"
+    "primary": "#6366F1",
+    "light": "#9D9EFA",
+    "dark": "#101A73"
+  },
+  "topbarCtaButton": {
+    "name": "Login",
+    "url": "https://artemisplatform.com/#"
   },
   "topbarLinks": [
     {
-      "name": "Documentation",
-      "url": "https://mintlify.com/docs"
+      "name": "Get Started",
+      "url": "https://artemisplatform.com/contact/"
     }
   ],
-  "topbarCtaButton": {
-    "name": "Get Started",
-    "url": "https://github.com/mintlify/starter"
-  },
   "anchors": [
-   
+    {
+      "name": "Contact",
+      "icon": "envelope",
+      "url": "mailto:AustinMcCoy@artemisar.com"
+    }
   ],
   "navigation": [
     {
-      "group": "Start Here",
-      "pages": ["artemisataglance", "firstwalkthrough"]
+      "group": "Artemis Labs",
+      "pages": [
+        "artemis-labs/artemis-at-a-glance",
+        "artemis-labs/artemis-structure",
+        {
+          "group": "Getting Started",
+          "pages": [
+            "artemis-labs/overview",
+            "artemis-labs/1--add-members-to-your-organization",
+            "artemis-labs/2--creating-a-workspace",
+            "artemis-labs/3--creating-a-project",
+            "artemis-labs/4--catalog-resources",
+            "artemis-labs/5--archive-instances",
+            "artemis-labs/6--viewing-the-network"
+          ]
+        }
+      ]
     },
     {
-      "group": "Detailed Breakdowns",
-      "pages": ["resourcecatalog", "Instnetwork", "instancearchive", "othertools"]
+      "group": "Catalog",
+      "pages": [
+        "catalog/catalog-overview",
+        "catalog/adding-to-the-catalog",
+        "catalog/creating-resource-types"
+      ]
+    },
+    {
+      "group": "Instance Archive",
+      "pages": [
+        "instance-archive/archive-overview",
+        "instance-archive/documenting-instances",
+        "instance-archive/adding-new-status-tags"
+      ]
+    },
+    {
+      "group": "AI Assistant",
+      "pages": ["available-tools"]
+    },
+    {
+      "group": "Network",
+      "pages": ["network/network-overview", "network/network-tools"]
+    },
+    {
+      "group": "Legal/Privacy",
+      "pages": ["user-license-agreement"]
     }
   ],
   "footerSocials": {
-    "twitter": "https://twitter.com/mintlify",
-    "github": "https://github.com/mintlify",
-    "linkedin": "https://www.linkedin.com/company/mintsearch"
+    "website": "https://artemisplatform.com/",
+    "youtube": "https://www.youtube.com/channel/UCdjY624O41watXJXziuIqqA",
+    "linkedin": "https://www.linkedin.com/company/artemis-devtool/"
   }
 }
