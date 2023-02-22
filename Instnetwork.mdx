@@ -4,14 +4,15 @@ title: "Instance Network"
 The network is where your team can diagram its data science projects. Each time a resource is placed on a network is called an “instance” of that resource.
 
 This guide will cover: 
-1. How to create instances on your network
-2. How to document instance relationships 
+1. Creating instances
+2. Connecting instances
+3. Documenting instances
 
-## Creating Instances
+## Creating Instancess
 Instances are created on the instance network to show when and how resources are deployed as part of your work. Here's a video illustrating the process: 
 
 
-<iframe src="https://www.youtube.com/embed/MysBvJnbDFg"> </iframe>
+<iframe width="719" height="404" src="https://www.youtube.com/embed/MysBvJnbDFg"> </iframe>
 
 First, navigate to the network in the subproject where you’re working. You can also view the network at the project or even the network level but can only add instances from the subproject level. 
 
@@ -29,10 +30,12 @@ The name and date section are fairly self-explanatory, we cover what an instance
 Once you press the “Create Instance” button, it will show up on your network and a modal to document the instance will instantly appear.
 
 
-## Documenting Instances
+## Connecting Instances
 Once you have more than one instance on your network it’s time to document how they relate. The video below walks you through that process.
-<iframe src="https://www.youtube.com/embed/ZSnY7xeaubU"> </iframe>
-At 0:28 in the video we start working with a modal that lets us document how the two resources are related. There are four different types of relationships we can note. They are:
+<iframe width="719" height="404" src="https://www.youtube.com/embed/ZSnY7xeaubU"> </iframe>
+At 0:28 in the video we start working with a modal that lets us document how the two resources are related. There are four different things a resource can be in a relationship. These are: origins, input datasets, output artifacts and deployments. Each of these is defined in detail below. When you’re documenting how two instances are related you only need to tell Artemis what one half of the relationship is and our system automatically takes care of the other. 
+
+For example, imagine you’re documenting the connection between a script and a graph it produces. If you note that the graph is the artifact in this dynamic the script will automatically be noted as the graph’s origin.
 
 * **Origin:** An origin is a resource that generates another one. For example, a script may be the origin of an output like a graph. 
 
@@ -41,6 +44,10 @@ At 0:28 in the video we start working with a modal that lets us document how the
 * **Output Artifact:** This is a resource that was output by another resource. For example, a graph may be the output of a script. 
 
 * **Deployment:** Sometimes an instance might be used by another instance. This is said to be its deployment. For example, a database can be deployed to be used by a script.
+
+**Note:** If you find this at all confusing, don't worry. Just make a few instances and try to document how they relate. Doing is easier than reading in this case.
+
+## Documenting Instances
 
 After you document instance relationships you can click on an instance and this modal will appear.
 <Frame caption="This is the modal that displays details about your instance">

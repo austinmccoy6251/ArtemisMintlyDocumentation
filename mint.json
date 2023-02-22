@@ -3,7 +3,7 @@
   "name": "Starter Kit",
   "logo": {
     "dark": "/logo/dark.png",
-    "light": "/logo/light.png"
+    "light": "https://d27n7fycrsusaz.cloudfront.net/Artemis+Logo+on+Mintlify.PNG"
   },
   "favicon": "/favicon.png",
   "colors": {
@@ -31,7 +31,7 @@
     },
     {
       "group": "Detailed Breakdowns",
-      "pages": ["resourcecatalog", "Instnetwork", "instancearchive", "othertools"]
+      "pages": ["resourcecatalog", "Instnetwork", "othertools"]
     }
   ],
   "footerSocials": {
