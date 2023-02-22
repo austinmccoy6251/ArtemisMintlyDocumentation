@@ -30,6 +30,14 @@
   ],
   "navigation": [
     {
+      "group": "Start Here",
+      "pages": ["start-here/artemisataglance", "start-here/firstwalkthrough"]
+    },
+    {
+      "group": "Detailed Breakdowns",
+      "pages": ["detailed-breakdowns/resourcecatalog", "detailed-breakdowns/Instnetwork", "detailed-breakdowns/othertools"]
+    },
+    {
       "group": "Artemis Labs",
       "pages": [
         "artemis-labs/artemis-at-a-glance",
@@ -66,7 +74,7 @@
     },
     {
       "group": "AI Assistant",
-      "pages": ["available-tools"]
+      "pages": ["ai-assistant/available-tools"]
     },
     {
       "group": "Network",
@@ -74,7 +82,7 @@
     },
     {
       "group": "Legal/Privacy",
-      "pages": ["user-license-agreement"]
+      "pages": ["legal/user-license-agreement"]
     }
   ],
   "footerSocials": {
