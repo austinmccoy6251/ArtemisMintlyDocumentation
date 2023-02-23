@@ -3,6 +3,7 @@ title: Artemis in practice
 ---
 This reference guide will cover different scenarios you may encounter in your workflow and a descriptions of when Artemis can help you. You may find yourself using Artemis for all of these tasks or whatever subset you see fit.
 ## Organizational: 
+<AccordionGroup>
 <Accordion title="When should I open a workspace?">
 When you have a group of people that are going to coordinate together on multiple different projects you should open a workspace for them to share. For example: you have a team of data scientists that will work with research and development data to accomplish a varied set of objectives.
 </Accordion>
@@ -15,7 +16,9 @@ Subprojects are for new facets of existing efforts. You should only crate a subp
 <Accordion title="When should I open a pipeline?">
 When you’ve constructed a series of operations that will be carried out repeatedly (even with tweaks to the parameters) – and you need to record the results of each run – you should make a pipeline. 
 </Accordion>
+</AccordionGroup>
 ## Mechanical:
+<AccordionGroup>
 <Accordion title="When should I create a resource?">
 Any time a member of a project introduces a resource that hasn’t been used in that project yet they need to make a new entry in the Resource Catalog. If you’re just introducing a new version of an old resource, you should navigate to its existing catalog entry and cut a new version.
 </Accordion>
@@ -26,8 +29,9 @@ Every time you use an existing resource in a project you should record an instan
 <Accordion title="When should I make a new instance of my pipeline?">
 You should make a new instance of your pipeline any time you want to document a run of the line. This could be because the dataset it runs off of was updated, thus producing a new results. Another common scenario is when you tweak the line’s parameters and want to record what that yielded. 
 </Accordion>
-
+</AccordionGroup>
 ## Other:
+<AccordionGroup>
 <Accordion title="Pipeline or project?">
 Here are some times when you should make a new project: 
 - You’re experimenting or exploring a new approach
@@ -48,3 +52,4 @@ This is another one of those things that’s up to the user. There’s nothing b
 <Accordion title="When should I not use Artemis?">
 If your project is simple enough to be diagramed on a whiteboard without forgetting anything or having miscommunications with team members, you probably don’t need Artemis. This isn’t to say Artemis wouldn’t be useful to a person in this situation, just that happy whiteboard users might be better off sticking with their trusty expo markers!
 </Accordion>
+</AccordionGroup>
