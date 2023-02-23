@@ -1,0 +1,50 @@
+---
+Title: “Artemis in practice”
+---
+This reference guide will cover different scenarios you may encounter in your workflow and a descriptions of when Artemis can help you. You may find yourself using Artemis for all of these tasks or whatever subset you see fit.
+## Organizational: 
+<Accordion title="When should I open a workspace?">
+When you have a group of people that are going to coordinate together on multiple different projects you should open a workspace for them to share. For example: you have a team of data scientists that will work with research and development data to accomplish a varied set of objectives.
+</Accordion>
+<Accordion title=" When should I open a project?">
+If you have a new objective for a group of people that already exists, you should open a project inside their workspace. For example, you have a new project for your R&D team. 
+</Accordion>
+<Accordion title="When should I open a subproject?">
+Subprojects are for new facets of existing efforts. You should only crate a subproject if what you’re working on exists only in the context of a greater project. For example, cleaning a dataset for a model you’re working on – when the model already has its own project.
+</Accordion>
+<Accordion title="When should I open a pipeline?">
+When you’ve constructed a series of operations that will be carried out repeatedly (even with tweaks to the parameters) – and you need to record the results of each run – you should make a pipeline. 
+</Accordion>
+## Mechanical:
+<Accordion title="When should I create a resource?">
+Any time a member of a project introduces a resource that hasn’t been used in that project yet they need to make a new entry in the Resource Catalog. If you’re just introducing a new version of an old resource, you should navigate to its existing catalog entry and cut a new version.
+</Accordion>
+<Accordion title="When should I create an instance?">
+Every time you use an existing resource in a project you should record an instance of that resource.
+</Accordion>
+
+<Accordion title="When should I make a new instance of my pipeline?">
+You should make a new instance of your pipeline any time you want to document a run of the line. This could be because the dataset it runs off of was updated, thus producing a new results. Another common scenario is when you tweak the line’s parameters and want to record what that yielded. 
+</Accordion>
+
+## Other:
+<Accordion title="Pipeline or project?">
+Here are some times when you should make a new project: 
+- You’re experimenting or exploring a new approach
+- You’re unsure exactly how what you’re doing will end or what results it will yield 
+- You’re only going to run what you’re working on one time 
+Here are some times when you should create a pipeline: 
+- You know exactly what you’re building, how it will end and intend to run it more than once 
+- You need to record the results produced by each run of your pipeline
+In brief, pipelines are for documenting things you run multiple times. You may change the parameters or make minor changes between runs – but the process itself isn’t expected to evolve significantly. Projects are for documenting process and operations that are subject to substantial change. 
+</Accordion>
+<Accordion title="Artemis as a planning tool?">
+Some users opt to use Artemis as a planning tool. This means creating networks that serve as roadmaps rather than documentation. This is a viable “off label” use case for our platform. Most who choose to do this open a subproject called “roadmap” or something similar and create “pending” resources that need to be created. If every resource that still needs to be created has a word like “pending” in its name you can also quickly filter for them in the catalog to make a sort of to-do list for your team. 
+Basically, it’s up to you if this is a good idea or not. (That said, we plan to release a custom-built planning feature at some point.)
+</Accordion>
+<Accordion title="Using Artemis outside data science?">
+This is another one of those things that’s up to the user. There’s nothing built into our platform that means you must use it for data science only. It’s proven quite effective for electrical engineers and bio researchers. The reason for our data science focus is because that’s what most of our users are doing, making it a market we will preferentially cater to when developing new features.
+</Accordion>
+<Accordion title="When should I not use Artemis?">
+If your project is simple enough to be diagramed on a whiteboard without forgetting anything or having miscommunications with team members, you probably don’t need Artemis. This isn’t to say Artemis wouldn’t be useful to a person in this situation, just that happy whiteboard users might be better off sticking with their trusty expo markers!
+</Accordion>
