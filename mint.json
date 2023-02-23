@@ -42,49 +42,6 @@
       "pages": ["inpractice"]
     },
     {
-      "group": "Artemis Labs",
-      "pages": [
-        "artemis-labs/artemis-at-a-glance",
-        "artemis-labs/artemis-structure",
-        {
-          "group": "Getting Started",
-          "pages": [
-            "artemis-labs/overview",
-            "artemis-labs/1--add-members-to-your-organization",
-            "artemis-labs/2--creating-a-workspace",
-            "artemis-labs/3--creating-a-project",
-            "artemis-labs/4--catalog-resources",
-            "artemis-labs/5--archive-instances",
-            "artemis-labs/6--viewing-the-network"
-          ]
-        }
-      ]
-    },
-    {
-      "group": "Catalog",
-      "pages": [
-        "catalog/catalog-overview",
-        "catalog/adding-to-the-catalog",
-        "catalog/creating-resource-types"
-      ]
-    },
-    {
-      "group": "Instance Archive",
-      "pages": [
-        "instance-archive/archive-overview",
-        "instance-archive/documenting-instances",
-        "instance-archive/adding-new-status-tags"
-      ]
-    },
-    {
-      "group": "AI Assistant",
-      "pages": ["ai-assistant/available-tools"]
-    },
-    {
-      "group": "Network",
-      "pages": ["network/network-overview", "network/network-tools"]
-    },
-    {
       "group": "Legal/Privacy",
       "pages": ["legal/user-license-agreement"]
     }
