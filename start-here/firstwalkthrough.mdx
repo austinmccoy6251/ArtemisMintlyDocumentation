@@ -2,7 +2,15 @@
 title: "Setup Walkthrough"
 ---
 
-This guide will walk you through how to set up and run your first project in Artemis. Primary, it will introduce you to the way Artemis lets you structure your human assets – your team. Inside your organization, Artemis lets you create different teams by assigning members to “**Workspaces**.” Each Workspace can host a practically unlimited number of “**Projects**.” Each Project contains **Subprojects** to help teams deal with each effort’s component parts. Finally, each Subproject contains Resource Catalogs and Modules to help you organize the pertinent data science assets.
+This guide will walk you through how to set up and run your first project in Artemis. 
+
+Primarily, it will introduce you to the way Artemis lets you structure your human assets – your team. Inside your organization, Artemis lets you create different teams by assigning members to “**Workspaces**.” 
+
+Each Workspace can host a practically unlimited number of “**Projects**.” 
+
+Each Project contains **Subprojects** to help teams deal with each effort’s component parts. Finally, each Subproject contains Resource Catalogs and Modules to help you organize the pertinent data science assets.
+
+
 Here's a structure diagram that represents this structure:
 
 ### Step by Step Walkthrough 
@@ -10,18 +18,33 @@ May of the steps involved with creating Workspaces, Projects and Subprojects are
 <AccordionGroup>
   <Accordion title="Create a Workspace, Project and Module">
 First you need to **add users to your Organization**. Do this by clicking the **Settings** tab on the left side of your screen. Then click **Users** and **Add User**. When adding a user to your Org, you’ll need to input their **ID Number**. These are assigned when a user first obtains their login credentials. You need to ask the person you’re trying to add to your Org for their number.
+    
+    
 Next, **create a Workspace** by pressing the green **New Workspace** button on the home page of your Org. Name your workspace when prompted, enter the workspace and **add users to your Workspace** using the Users tab that appears on the left side of your screen. You will not need users’ ID Numbers here. Instead, you’ll see a selectable list of the users you’ve already added to your Org.
+    
+    
 **Create a Project** inside your Workspace by clicking the **New Project** button in the upper right hand corner. Populate your Project with users.
+    
+    
 Finally, **Create a Subproject** and add users to it as well.
 </Accordion>
 <Accordion title="Create Resources">
 Inside your **Subproject** you’ll find a **Resource Catalog** where your team can document all the assets brought to bear on whatever they’re working on. To add a Resource, enter the Catalog and push the green **New Resource** button at the top right. 
+  
+  
 A modal will appear prompting you to name the Resource. When you press the green **Create Resource** button, it will be added to your Catalog and another modal will appear giving you the chance to add more documentary content to the resource’s Catalog entry. Here’s an [in-depth guide] (https://docs.artemisplatform.com/detailed-breakdowns/resourcecatalog) on how to do that. 
 </Accordion>
 <Accordion title="Place Instances on Network">
-**Networks** are spaces to diagram how your resources relate in a given project. They let you gain a 30,000 foot view of a team’s work in seconds. To create a Network inside your Subproject, enter the **Modules** tab and press **New Module** at the top right. Name your Module, create it and a modal like the one below will appear. **Click the second tab** that looks like a network and you’ll see a blank canvas to work with.
-Pic
-At the top of the network there’s a button to place a **New Instance**. Each time a resource is added to a Network to diagram how it’s used, that’s called an Instance of that Resource. Press the **New Instance** button at the top of the Network, hover your cursor over where you want it to be and **right click** to place your Instance. A Module like the one below will appear prompting you to name the Instance and indicate which Resource it’s an example of. You do this by opening another tab with the **Resource Catalog**, clicking the Resource you’re working with and **copying the Resource ID**. Paste it into the modal to create an Instance. 
+**Networks** are spaces to diagram how your resources relate in a given project. They let you gain a 30,000 foot view of a team’s work in seconds. 
+  
+To create a Network inside your Subproject, enter the **Modules** tab and press **New Module** at the top right. Name your Module, create it and a modal like the one below will appear. **Click the second tab** that looks like a network and you’ll see a blank canvas to work with.
+
+  
+At the top of the network there’s a button to place a **New Instance**. Each time a resource is added to a Network to diagram how it’s used, that’s called an Instance of that Resource. Press the **New Instance** button at the top of the Network, hover your cursor over where you want it to be and **right click** to place your Instance. 
+  
+A Module like the one below will appear prompting you to name the Instance and indicate which Resource it’s an example of. You do this by opening another tab with the **Resource Catalog**, clicking the Resource you’re working with and **copying the Resource ID**. Paste it into the modal to create an Instance.
+  
+  
 Once you create your Instance, it will appear on the network. Consult [this guide] (https://docs.artemisplatform.com/detailed-breakdowns/Instnetwork) or 5:50 at the video below to learn how to document the relationships between various instances. 
 </Accordion>
 </AccordionGroup>
