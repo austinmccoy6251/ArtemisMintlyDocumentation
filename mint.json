@@ -45,7 +45,6 @@
       "group": "Legal/Privacy",
       "pages": ["legal/user-license-agreement"]
     },
-    
     {
       "group": "Beta 2",
       "pages" : ["betaWorkspaces", "betaProjects", "BetaSubprojects"],
