@@ -4,7 +4,7 @@
     "light": "/logo/light.svg",
     "dark": "/logo/dark.svg"
   },
-  "versions": ["v1.6"],
+  "versions": ["v1.6", "beta"],
   "favicon": "/favicon.png",
   "colors": {
     "primary": "#6366F1",
@@ -44,6 +44,18 @@
     {
       "group": "Legal/Privacy",
       "pages": ["legal/user-license-agreement"]
+    },
+    {
+      "group" : "Beta 1",
+      "pages" : [
+        
+      ],
+      "version" : "beta"
+    },
+    {
+      "group": "Beta 2",
+      "pages" : [],
+      "version" : "beta"
     }
   ],
   "footerSocials": {
