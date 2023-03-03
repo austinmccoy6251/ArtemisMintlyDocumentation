@@ -47,14 +47,12 @@
     },
     {
       "group" : "Beta 1",
-      "pages" : [
-        
-      ],
+      "pages" : ["inpractice"],
       "version" : "beta"
     },
     {
       "group": "Beta 2",
-      "pages" : [],
+      "pages" : ["inpractice"],
       "version" : "beta"
     }
   ],
