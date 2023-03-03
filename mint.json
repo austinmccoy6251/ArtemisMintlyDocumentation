@@ -52,7 +52,7 @@
     },
     {
       "group": "Beta 2",
-      "pages" : ["BetaSubprojects, betaProjexts, betaWorkspaces"],
+      "pages" : ["BetaSubprojects", "betaProjexts", "betaWorkspaces"],
       "version" : "beta"
     }
   ],
