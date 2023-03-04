@@ -49,7 +49,7 @@
       "group": "Getting Started beta",
       "pages" : ["atglancebeta", "setupbeta"],
       "version" : "beta"
-    }
+    },
     {
       "group": "Detailed Breakdowns beta",
       "pages" : ["betaWorkspaces", "betaProjects", "BetaSubprojects"],
