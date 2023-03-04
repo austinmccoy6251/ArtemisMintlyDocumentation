@@ -45,8 +45,13 @@
       "group": "Legal/Privacy",
       "pages": ["legal/user-license-agreement"]
     },
+        {
+      "group": "Getting Started beta",
+      "pages" : ["atglancebeta", "setupbeta"],
+      "version" : "beta"
+    }
     {
-      "group": "Beta 2",
+      "group": "Detailed Breakdowns beta",
       "pages" : ["betaWorkspaces", "betaProjects", "BetaSubprojects"],
       "version" : "beta"
     }
