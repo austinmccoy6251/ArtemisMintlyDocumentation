@@ -47,7 +47,7 @@
     },
         {
       "group": "Getting Started beta",
-      "pages" : ["atglancebeta", "setupbeta"],
+      "pages" : ["atglancebeta", "betasetupwalkthrough"],
       "version" : "beta"
     },
     {
