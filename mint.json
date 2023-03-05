@@ -60,5 +60,10 @@
     "website": "https://artemisplatform.com/",
     "youtube": "https://www.youtube.com/channel/UCdjY624O41watXJXziuIqqA",
     "linkedin": "https://www.linkedin.com/company/artemis-devtool/"
-  }
+  },
+  "analytics": {
+    "posthog": {
+        "apiKey": "phc_v9hJ6qPJMNiMl5KUYBHdGVzjqwDD43EUUJvmQ8BMBua"
+    }
+  }   
 }
