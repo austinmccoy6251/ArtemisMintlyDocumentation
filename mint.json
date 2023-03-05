@@ -38,10 +38,6 @@
       "pages": ["detailed-breakdowns/resourcecatalog", "detailed-breakdowns/Instnetwork", "detailed-breakdowns/othertools"]
     },
     {
-      "group": "Artemis in Pratice",
-      "pages": ["inpractice"]
-    },
-    {
       "group": "Legal/Privacy",
       "pages": ["legal/user-license-agreement"]
     },
@@ -54,6 +50,10 @@
       "group": "Detailed Breakdowns beta",
       "pages" : ["betaWorkspaces", "betaProjects", "BetaSubprojects", "betaresourcecatalog", "betanetworks"],
       "version" : "beta"
+    },
+    {
+      "group": "Artemis in Pratice",
+      "pages": ["inpractice"]
     },
   ],
   "footerSocials": {
