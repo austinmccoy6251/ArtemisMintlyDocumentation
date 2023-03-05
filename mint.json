@@ -32,28 +32,31 @@
     {
       "group": "Start Here",
       "pages": ["start-here/artemisataglance", "start-here/firstwalkthrough"]
+      "version" : "1.6"
     },
     {
       "group": "Detailed Breakdowns",
       "pages": ["detailed-breakdowns/resourcecatalog", "detailed-breakdowns/Instnetwork", "detailed-breakdowns/othertools"]
-    },
-    {
-      "group": "Legal/Privacy",
-      "pages": ["legal/user-license-agreement"]
+      "version" : "1.6"
     },
         {
       "group": "Getting Started beta",
       "pages" : ["atglancebeta", "betasetupwalkthrough"],
-      "version" : "beta"
+      "version" : "1.7"
     },
     {
       "group": "Detailed Breakdowns beta",
       "pages" : ["betaWorkspaces", "betaProjects", "BetaSubprojects", "betaresourcecatalog", "betanetworks"],
-      "version" : "beta"
+      "version" : "1.7"
     },
     {
       "group": "Artemis in Pratice",
       "pages": ["inpractice"]
+    },
+    {
+      "group": "Legal/Privacy",
+      "pages": ["legal/user-license-agreement"]
+      "version" : "1.7"
     }
   ],
   "footerSocials": {
