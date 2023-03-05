@@ -39,7 +39,7 @@
       "pages": ["detailed-breakdowns/resourcecatalog", "detailed-breakdowns/Instnetwork", "detailed-breakdowns/othertools"]
       "version" : "1.6"
     },
-        {
+    {
       "group": "Getting Started beta",
       "pages" : ["atglancebeta", "betasetupwalkthrough"],
       "version" : "1.7"
