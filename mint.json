@@ -52,7 +52,7 @@
     },
     {
       "group": "Detailed Breakdowns beta",
-      "pages" : ["betaWorkspaces", "betaProjects", "BetaSubprojects," "betaresourcecatalog"],
+      "pages" : ["betaWorkspaces", "betaProjects", "BetaSubprojects", "betaresourcecatalog"],
       "version" : "beta"
     }
   ],
