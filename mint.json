@@ -31,12 +31,12 @@
   "navigation": [
     {
       "group": "Start Here",
-      "pages": ["start-here/artemisataglance", "start-here/firstwalkthrough"]
+      "pages": ["start-here/artemisataglance", "start-here/firstwalkthrough"],
       "version" : "1.6"
     },
     {
       "group": "Detailed Breakdowns",
-      "pages": ["detailed-breakdowns/resourcecatalog", "detailed-breakdowns/Instnetwork", "detailed-breakdowns/othertools"]
+      "pages": ["detailed-breakdowns/resourcecatalog", "detailed-breakdowns/Instnetwork", "detailed-breakdowns/othertools"],
       "version" : "1.6"
     },
     {
@@ -51,12 +51,12 @@
     },
     {
       "group": "Artemis in Pratice",
-      "pages": ["inpractice"]
+      "pages": ["inpractice"],
       "version" : "1.7"
     },
     {
       "group": "Legal/Privacy",
-      "pages": ["legal/user-license-agreement"]
+      "pages": ["legal/user-license-agreement"],
       "version" : "1.7"
     }
   ],
