@@ -54,7 +54,12 @@
       "group": "Detailed Breakdowns beta",
       "pages" : ["betaWorkspaces", "betaProjects", "BetaSubprojects", "betaresourcecatalog", "betanetworks"],
       "version" : "beta"
-    }
+    },
+    {
+      "group": "Artemis in Pratice beta",
+      "pages": ["betainprac"]
+      "version" : "beta"
+    },
   ],
   "footerSocials": {
     "website": "https://artemisplatform.com/",
