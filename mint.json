@@ -30,13 +30,18 @@
   ],
   "navigation": [
     {
-      "group": "Getting Started beta",
+      "group": "Getting Started",
       "pages" : ["atglancebeta", "betasetupwalkthrough"],
       "version" : "1.7"
     },
     {
-      "group": "Detailed Breakdowns beta",
-      "pages" : ["betaWorkspaces", "betaProjects", "BetaSubprojects", "betaresourcecatalog", "betanetworks"],
+      "group": "Organize your Team",
+      "pages" : ["betaWorkspaces", "betaProjects", "BetaSubprojects", "finder"],
+      "version" : "1.7"
+    },
+    {
+      "group": "Modules",
+      "pages" : ["betanetworks", ],
       "version" : "1.7"
     },
     {
