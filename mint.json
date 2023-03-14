@@ -41,7 +41,7 @@
     },
     {
       "group": "Modules",
-      "pages" : ["betanetworks"],
+      "pages" : ["betanetworks", "modulesintro"],
       "version" : "1.7"
     },
     {
