@@ -44,6 +44,11 @@
       "pages" : ["modulesintro", "betanetworks"],
       "version" : "1.7"
     },
+     {
+      "group": "Pipelines",
+      "pages" : ["PipelinesIntro", "RunningAPipeline"],
+      "version" : "1.7"
+    },
     {
       "group": "Artemis in Pratice",
       "pages": ["inpractice"],
