@@ -49,6 +49,11 @@
       "pages" : ["PipelinesIntro", "RunningAPipeline"],
       "version" : "1.7"
     },
+         {
+      "group": "Views",
+      "pages" : ["ViewsOverview", "CustomFields"],
+      "version" : "1.7"
+    },
     {
       "group": "Artemis in Pratice",
       "pages": ["inpractice"],
