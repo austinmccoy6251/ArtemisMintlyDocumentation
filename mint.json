@@ -51,7 +51,7 @@
     },
          {
       "group": "Views",
-      "pages" : ["ViewsOverview", "CustomFields", "groups"],
+      "pages" : ["ViewsOverview", "CustomFields", "CreatingViews", "groups"],
       "version" : "1.7"
     },
     {
