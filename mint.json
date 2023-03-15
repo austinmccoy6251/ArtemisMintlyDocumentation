@@ -47,7 +47,7 @@
      {
       "group": "Pipelines",
       "pages" : ["PipelinesIntro", "RunningAPipeline"],
-      "version" : "1.7"
+      "version" : "1.6"
     },
          {
       "group": "Views",
