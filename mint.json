@@ -46,7 +46,7 @@
     },
      {
       "group": "Pipelines",
-      "pages" : ["PipelinesIntro", "RunningAPipeline"],
+      "pages" : ["PipelinesIntro", "ConstructingPipelines", "RunningAPipeline"],
       "version" : "1.6"
     },
          {
