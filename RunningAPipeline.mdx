@@ -18,3 +18,35 @@ The walkthrough below demonstrates this procedure:
 <iframe src="https://app.supademo.com/embed/tPPIiZh5doYMRaknsf1mA" frameborder="0" webkitallowfullscreen="true" mozallowfullscreen="true" allowfullscreen style={{"width":"719px","height":"500px","border":"none"}}></iframe>
 
 ### Documenting Parameters 
+The following walkthrough demonstrates the mechanics of setting up a Pipeline. By “setting up” we mean the process of diagraming how it’s laid out. The next section of our docs explain how to document runs, their parameters and results. 
+
+Artemis make it easy to record when your Pipeline was run and what parameters were used for each run. This section covers how that works, building on the small example Pipeline we created in the last section, [Constructing Pipelines]( https://docs.artemisplatform.com/ConstructingPipelines).
+
+This page will cover: 
+1.	Creating new runs of a Pipeline
+2.	Documenting the unique circumstances of each run 
+### Making new runs
+This is very easy. Simply enter your Pipeline, click the icon of a man running and press the green “Add Run” button. The run will appear on the Pipeline Runs section of your Pipeline page.
+
+The walkthrough below demonstrates this procedure: 
+
+*[Full screen walkthrough here](https://app.supademo.com/demo/tPPIiZh5doYMRaknsf1mA)*
+
+<iframe src="https://app.supademo.com/embed/tPPIiZh5doYMRaknsf1mA" frameborder="0" webkitallowfullscreen="true" mozallowfullscreen="true" allowfullscreen style={{"width":"719px","height":"500px","border":"none"}}></iframe>
+
+### Documenting Parameters
+After you document that you ran your Pipeline you should document what exactly made that run unique. Artemis lets you do this in just a few steps. 
+First, be sure you’ve set up the parameters you’re going to document for each Pipeline step. Do this by double clicking a step on the Pipeline, navigating to the fields tab (third from bottom on the left hand bar) and pressing the “Add Field” button. 
+
+Now when you make a new run of your Pipeline you can fill in the appropriate values for each of these fields. This is a manual task that can be automated by use of our API.
+
+**Please note** that once you’ve created a field you cannot change its name. Also, note that you cannot delete fields unless you’ve cleared all the data from them on every run. This is designed to help protect against accidental data loss. 
+
+### Walkthrough
+The walkthrough below demonstrates how to set up custom fields to record parameters, run the pipeline and document what we changed each run. 
+
+This example is a continuation of the small pipeline we made above. The parameters we’re documenting are the day the database was last updated and the location of the output CSV file.
+
+*[Full screen walkthrough here](https://app.supademo.com/demo/_9wwSYYMx1VDXSsb9xUMA)*
+
+<iframe src="https://app.supademo.com/embed/_9wwSYYMx1VDXSsb9xUMA" frameborder="0" webkitallowfullscreen="true" mozallowfullscreen="true" allowfullscreen style={{"width":"719px","height":"500px","border":"none"}}></iframe>
