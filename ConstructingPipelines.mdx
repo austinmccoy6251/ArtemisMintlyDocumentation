@@ -7,13 +7,17 @@ Pipelines, on the other hand are made up of steps. There are two kinds of steps.
 
 For example, consider a pipeline that goes [Primary Dataset] -> [Transformation Script] -> [CSV File]. In this example, I can document that the script will output a CSV file before that file exists. The CSV file is an example of something we call a “Dynamic Step.” 
 
+<Frame caption="This graphic illustrates static vs dynamic steps in an example Pipeline">
+  <img src="https://d27n7fycrsusaz.cloudfront.net/pipeline+step+types.PNG" />
+</Frame>
+
 **Dyanmic Step**: These are steps you place when visualizing your Pipeline. They stand in for things that will be created as the Pipeline executes. 
 
 **Static Step**: These actually are based on Resources. In the example above the Transformation Script would be a static step because it doesn’t change when you run your pipeline no matter what parameters you use. 
 
+### Walkthrough 
 The following walkthrough demonstrates the mechanics of setting up a Pipeline. By “setting up” we mean the process of diagraming how it’s laid out. The next section of our docs explain how to document runs, their parameters and results. 
 
-### Walkthrough 
 *[Full screen walkthrough here](https://app.supademo.com/demo/sjDwAQPDgqDRZ7xuwucZj)*
 
 <iframe src="https://app.supademo.com/embed/sjDwAQPDgqDRZ7xuwucZj" frameborder="0" webkitallowfullscreen="true" mozallowfullscreen="true" allowfullscreen style={{"width":"719px","height":"500px","border":"none"}}></iframe>
