@@ -11,21 +11,3 @@ This Pipelines Guide is broken down into three sections:
 1.	Constructing Pipelines 
 2.	Running Pipelines? 
 3.	Idk lol 
-
-### Constructing Pipelines
-Pipelines are laid out similar to the way you’d lay out Networks, but with one variation. When you’re building a Network you place Instances of Resources. These Instances can have parameters (defined in custom Fields) but are just shadows of their Resource.
-    <Frame caption="One Resource, mutiple Instances">
-  <img src="https://d27n7fycrsusaz.cloudfront.net/same+resource%2C+multiple+applications.PNG" />
-</Frame>
-
-Pipelines, on the other hand are made up of steps. There are two kinds of steps. One of them has an underlying resource the other does not. This is because some steps in a pipeline aren’t actually there until you run it. 
-
-For example, consider a pipeline that goes [Primary Dataset] -> [Transformation Script] -> [CSV File]. In this example, I can document that the script will output a CSV file before that file exists. The CSV file is an example of something we call a “Dynamic Step.” 
-
-**Dyanmic Step**: These are steps you place when visualizing your Pipeline. They stand in for things that will be created as the Pipeline executes. 
-
-**Static Step**: These actually are based on Resources. In the example above the Transformation Script would be a static step because it doesn’t change when you run your pipeline no matter what parameters you use. 
-
-The following walkthrough demonstrates the mechanics of setting up a Pipeline. By “setting up” we mean the process of diagraming how it’s laid out. The next section of our docs explain how to document runs, their parameters and results. 
-
-### Walkthrough 
