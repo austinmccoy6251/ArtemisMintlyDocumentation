@@ -68,7 +68,17 @@
     },
      {
       "group": "Views",
-      "pages" : ["ViewsOverview", "CustomFields", "CreatingViews", "groups"],
+      "pages" : [
+        "ViewsOverview", 
+        {
+          "group": "Networks",
+           "pages": [
+            "CustomFields",
+            "CreatingViews",
+            "groups",
+          ]          
+        },
+      ],
       "version" : "1.7"
     },
     {
