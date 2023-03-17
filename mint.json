@@ -71,11 +71,11 @@
       "pages" : [
         "ViewsOverview", 
         {
-          "group": "Networks",
+          "group": "Network Views",
            "pages": [
             "CustomFields",
             "CreatingViews",
-            "groups",
+            "groups"
           ]          
         },
       ],
