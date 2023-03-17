@@ -1,0 +1,18 @@
+## Connecting Instances
+Connecting Instances is quick and easy. Here's a walkthrough: 
+
+*[Full screen walkthrough here](https://supademo.com/demo/eMSD0GOp1Et4IzTGjlGTM)*
+
+<iframe src="https://supademo.com/embed/eMSD0GOp1Et4IzTGjlGTM" frameborder="0" webkitallowfullscreen="true" mozallowfullscreen="true" allowfullscreen style={{"width":"719px","height":"500px","border":"none"}}></iframe>
+
+Instances can be related to one another in four ways. An Instance can be another Instances origin or input if it’s the “upstream” instance in the relationship. “Downstream” instances can either be artifacts (created by the upstream Instance) or deployments (using an upstream database.) Here’s a reference table:
+
+* **Origin:** An origin is a resource that generates another one. For example, a script may be the origin of an output like a graph. 
+ 
+* **Input Dataset:** As the name suggests, this is a resource that inputs data to another. For example, a database may be the input data for a script.
+ 
+* **Output Artifact:** This is a resource that was output by another resource. For example, a graph may be the output of a script. 
+ 
+* **Deployment:** Sometimes an Instance might be used by another Instance. This is said to be its deployment. For example, a database can be deployed to be used by a script.
+
+* **Note:** If you find this at all confusing, don't worry. Just make a few Instances and try to document how they relate. Doing is easier than reading in this case.
