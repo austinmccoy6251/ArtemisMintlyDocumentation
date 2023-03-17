@@ -1,0 +1,28 @@
+---
+title: "Introduction to Placeable Processes"
+---
+Before you learn about Placeable Processes, it’s imperative you understand both Networks and Pipelines. Placeable Processes are essentially a blend of the two.
+
+
+Sometimes you may run a section of your work in a repeated way with different parameters and therefore different results. If these repeated operations occur in isolation you should just make a Pipeline for them. However, if they’re part of work you’re already documenting with a Network you have two choices: 
+- Make multiple branches of your Network, one for each execution. (This can get cluttered quickly!)
+- Use a Placeable Process to document several iterations of the same Network “branch” in one place.
+
+
+**Using Placeable Processes allows you to repeat one section of your work and diagram exactly what you did without cluttering your Network.**
+
+
+<AccordionGroup>
+  <Accordion title="Networks without Placeable Processes">
+Here, a user ran two different trainers on their data to produce two versions of the final model. These two processes are identical in every way except parameters. While this may be tenable (but cluttered) with two iterations, imagine how it might look with 3 or 10 different runs!
+<Frame caption="Networks without Placeable Processes">
+  <img src="https://d27n7fycrsusaz.cloudfront.net/graph+without+placable+processes.PNG" />
+</Frame>
+  </Accordion>
+  <Accordion title="Networks with Placeable Processes">
+In this example, both runs have been collapsed into one Placeable Process. You can have an infinite number of different runs with different iterations stacked inside that red box. The results of each run and each parameter used are displayed neatly inside without needing to clutter your Network.
+<Frame caption="Networks with Placeable Processes">
+  <img src="https://d27n7fycrsusaz.cloudfront.net/process+demo.PNG" />
+</Frame>
+  </Accordion>
+</AccordionGroup>
