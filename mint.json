@@ -43,18 +43,18 @@
       "group": "Modules",
       "pages" : [
           "modulesintro", 
-        {
-           "group": "Networks",
-           "pages": [
-            "betanetworks",
-            "createmodule",
-            "creatinginstances",
-            "connectinginstances",
-            "documentinginstances"
-          ]
-        }
-      ],
-      "version" : "1.7"
+           {
+             "group": "Networks",
+             "pages": [
+                "betanetworks",
+                "createmodule",
+                "creatinginstances",
+                "connectinginstances",
+                "documentinginstances"
+              ]
+           }
+       ],            
+        "version" : "1.7"
     },
      {
       "group": "Pipelines",
@@ -76,7 +76,7 @@
             "CustomFields",
             "CreatingViews",
             "groups"
-          ]          
+          ]
         },
       ],
       "version" : "1.7"
