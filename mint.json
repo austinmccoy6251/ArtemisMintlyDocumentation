@@ -44,9 +44,9 @@
       "pages" : [
           "modulesintro", 
         {
-           "group": "betanetworks",
+           "group": "Networks",
            "pages": [
-            "artemis-labs/overview",
+            "betanetworks",
             "artemis-labs/1--add-members-to-your-organization",
             "artemis-labs/2--creating-a-workspace",
             "artemis-labs/3--creating-a-project",
