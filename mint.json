@@ -51,7 +51,7 @@
     },
      {
       "group": "Placeable Processes",
-      "pages" : ["PlaceableProcesses"],
+      "pages" : ["PlaceableProcesses", "CreatingProcesses"],
       "version" : "1.7"
     },
      {
