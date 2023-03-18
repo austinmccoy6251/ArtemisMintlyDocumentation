@@ -81,7 +81,8 @@
         {
           "group": "Pipeline Views",
            "pages": [
-            "pipelinefields"
+            "pipelinefields",
+            "pipelineviews"
           ]
         }
       ],
