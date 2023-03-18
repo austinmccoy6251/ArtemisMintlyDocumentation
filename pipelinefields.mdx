@@ -2,18 +2,16 @@
 title: "Pipeline Fields"
 ---
 
-Artemis lets you diagram the structure of your Pipelines and record the parameters/results of each run. You can use Views to see how these vary from run to run in table format.
+Artemis lets you diagram the steps used in your Pipeline and record each time it’s run. You can then enter each run and record its parameters/results. Finally, you can view these parameters/results side by side using Pipeline Views. 
 
-There are two steps to set up a successful Pipeline View. First you’ll need to define custom fields where your parameters/results can be recorded. Then you can create a view to display whichever combination of fields is most helpful. 
+However, before you can do any of this, you need to set up what fields each Pipeline step needs. You do this by going to your Pipeline diagram, clicking on each step and setting up custom Fields that will hold parameters/results for each of your runs. 
 
-This page explains how you create custom fields, the next one covers creating a view. 
+For example, you may diagram a pipeline that you’ll run many times as the input dataset is updated with new real-world data. Therefore, you should create a custom Field on the database Pipeline step to record the date the data was last updated at the time of each run. Similarly, your Pipeline may generate CSV files each time it’s run. You should probably create a field for the corresponding Pipeline step to record where each run’s file is located.
 
-**Custom fields** are created inside Pipeline steps. You define them after first creating your Pipeline and fill them out for each step (you can also use our API to avoid doing this by hand). 
+Once you do this, you’ll be able to enter your runs and input values for each custom field. (Or use our API if you don’t want to do this by hand. 
 
 ### Walkthrough
-This guide shows you how to create and locate fields.
-
+The following walkthrough shows you where to create custom Fields for Pipeline steps.
 *[Full screen walkthrough here]( https://app.supademo.com/demo/clfda98xa0b5fq50hrmpnrnds)*
 
 <iframe src=" https://app.supademo.com/embed/clfda98xa0b5fq50hrmpnrnds " frameborder="0" webkitallowfullscreen="true" mozallowfullscreen="true" allowfullscreen style={{"width":"719px","height":"500px","border":"none"}}></iframe>
-
