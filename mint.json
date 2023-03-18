@@ -78,6 +78,12 @@
             "groups"
           ]
         }
+        {
+          "group": "Pipeline Views",
+           "pages": [
+            "pipelinefields"
+          ]
+        }
       ],
       "version" : "1.7"
     },
