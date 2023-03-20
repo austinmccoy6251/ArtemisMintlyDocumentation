@@ -35,28 +35,28 @@ description: "This endpoint queries and returns a specified run of a specified p
 <ResponseField name="message" type="object">
   Message containing the queried pipeline run.
   <Expandable title="Pipeline Run Object Structure">
-    <ResponseField body="name" type="string" required>
+    <ResponseField name="name" type="string" required>
         This is the name of the pipeline run
     </ResponseField>
-    <ResponseField body="description" type="string" optional>
+    <ResponseField name="description" type="string" optional>
         This is the description of the pipeline run
     </ResponseField>
-    <ResponseField body="creator" type="string" optional>
+    <ResponseField name="creator" type="string" optional>
         The name of the user who created the pipeline run
     </ResponseField>
-    <ResponseField body="created_time" type="string" optional>
+    <ResponseField name="created_time" type="string" optional>
         The time the pipeline run was created (epoch)
     </ResponseField>
-    <ResponseField body="updated_time" type="string" optional>
+    <ResponseField name="updated_time" type="string" optional>
         The time the pipeline run was last modified (epoch)
     </ResponseField>
-    <ResponseField body="run_date" type="string" optional>
+    <ResponseField name="run_date" type="string" optional>
         This is the date the pipeline run was run (MM/DD/YYYY)
     </ResponseField>
-    <ResponseField body="run_date" type="string" optional>
+    <ResponseField name="run_date" type="string" optional>
         This is the date the pipeline run was run (MM/DD/YYYY)
     </ResponseField>
-    <ResponseField body="steps" type="[Steps]" optional>
+    <ResponseField name="steps" type="[Steps]" optional>
         An array of the different steps in this pipeline run.
         <Expandable title="Step Structure">
                <ResponseField name="name" type="string">
@@ -68,7 +68,7 @@ description: "This endpoint queries and returns a specified run of a specified p
                <ResponseField name="description" type="string">
                     The description of the step
                </ResponseField>
-                <ResponseField body="instance" type="[Resource instance]" optional>
+                <ResponseField name="instance" type="[Resource instance]" optional>
                     The resource instance associated with this step
                     <Expandable title="Resource Instance Structure">
                         <ResponseField name="name" type="string">

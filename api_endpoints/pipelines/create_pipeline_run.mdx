@@ -37,58 +37,58 @@ description: "This endpoint creates a run of a specified pipeline"
 <ParamField body="steps" type="[Steps]" optional>
   An array of steps indicating the information to be logged for each step in the pipeline for this run.
    <Expandable title="Step Structure">
-    <ParamField name="name" type="string" required>
+    <ResponseField name="name" type="string" required>
         The name of the step. This can be found by double clicking the step in the network
-    </ParamField>
-    <ParamField name="description" type="string" optional>
+    </ResponseField>
+    <ResponseField name="description" type="string" optional>
         The description of the step
-    </ParamField>
-     <ParamField name="input_notes" type="string" optional>
+    </ResponseField>
+     <ResponseField name="input_notes" type="string" optional>
         Any notes about the input for the step
-    </ParamField>
-     <ParamField name="output_notes" type="string" optional>
+    </ResponseField>
+     <ResponseField name="output_notes" type="string" optional>
         Any notes about the output for the step
-    </ParamField>
-    <ParamField name="origin_notes" type="string" optional>
+    </ResponseField>
+    <ResponseField name="origin_notes" type="string" optional>
         Any notes about the origin of the step
-    </ParamField>
-    <ParamField name="deployment_notes" type="string" optional>
+    </ResponseField>
+    <ResponseField name="deployment_notes" type="string" optional>
         Any notes about the deployment of the step
-    </ParamField>
-    <ParamField body="fields" type="[Partial Field]" optional>
+    </ResponseField>
+    <ResponseField name="fields" type="[Partial Field]" optional>
         An array of partial fields indicating which fields you want to log for this step and the values they should be updated to. Note: You only need to specify the fields you want to log values for.
         <Expandable title="Partial Field Structure">
-            <ParamField name="name" type="string" required>
+            <ResponseField name="name" type="string" required>
                 The name of the field
-            </ParamField>
-            <ParamField name="value" type="type" optional default="">
+            </ResponseField>
+            <ResponseField name="value" type="type" optional default="">
                 The updated value for this field
-            </ParamField>
+            </ResponseField>
         </Expandable>
-    </ParamField>
-    <ParamField body="underlying_resource_content" type="[Content]" optional>
+    </ResponseField>
+    <ResponseField name="underlying_resource_content" type="[Content]" optional>
         **Note: This is only applicable to dynamic steps.** This is an array of content items indicating the content of the underlying resource for this step. The structure of each Content item is detailed below.
          <Expandable title="Content Structure">
-            <ParamField name="name" type="string" required>
+            <ResponseField name="name" type="string" required>
             The name of the content
-            </ParamField>
-            <ParamField name="version" type="string" optional>
+            </ResponseField>
+            <ResponseField name="version" type="string" optional>
                 The version of the content
-            </ParamField>
-            <ParamField name="location" type="string" optional>
+            </ResponseField>
+            <ResponseField name="location" type="string" optional>
                 The location of the content
-            </ParamField>
-            <ParamField name="description" type="string" optional>
+            </ResponseField>
+            <ResponseField name="description" type="string" optional>
                 The description of the content
-            </ParamField>
+            </ResponseField>
         </Expandable>
-    </ParamField>
-    <ParamField name="underlying_resource_description" type="string" optional>
+    </ResponseField>
+    <ResponseField name="underlying_resource_description" type="string" optional>
         **Note: This is only applicable to dynamic steps.**  This is the description of the underlying resource for this step.
-    </ParamField>
-    <ParamField name="underlying_resource_content_notes" type="string" optional>
+    </ResponseField>
+    <ResponseField name="underlying_resource_content_notes" type="string" optional>
         **Note: This is only applicable to dynamic steps.**  This is the notes of the content of the underlying resource for this step.
-    </ParamField>
+    </ResponseField>
   </Expandable>
 </ParamField>
 

@@ -24,22 +24,22 @@ description: "This endpoint queries and returns a specified run of a specified p
   Indicates whether the call was successful. 200 if successful, 400 if not.
 </ResponseField>
 
-<ResponseField name="message" type="object">
-  Message containing the queried pipeline run.
-  <Expandable title="Pipeline Run Object Structure">
-    <ResponseField body="name" type="string" required>
-        This is the name of the pipeline run
-    </ResponseField>
-    <ResponseField body="creator" type="string" optional>
-        The name of the user who created the pipeline run
-    </ResponseField>
-    <ResponseField body="run_date" type="string" optional>
-        This is the date the pipeline run was run (MM/DD/YYYY)
-    </ResponseField>
-    <ResponseField body="id" type="string" optional>
-        This is the id of the pipeline run
-    </ResponseField>
-  </Expandable>
+<ResponseField name="message" type="[Pipeline Run]">
+     Message containing the queried pipeline runs.
+    <Expandable title="Pipeline Run Object Structure">
+        <ResponseField name="name" type="string" required>
+            This is the name of the pipeline run
+        </ResponseField>
+        <ResponseField name="creator" type="string" optional>
+            The name of the user who created the pipeline run
+        </ResponseField>
+        <ResponseField name="run_date" type="string" optional>
+            This is the date the pipeline run was run (MM/DD/YYYY)
+        </ResponseField>
+        <ResponseField name="id" type="string" optional>
+            This is the id of the pipeline run
+        </ResponseField>
+    </Expandable>
 </ResponseField>
 <RequestExample>
 
@@ -60,89 +60,19 @@ curl --location --request GET 'https://artemisarbackend.com:8080/ext/query_pipel
 
 ```json Response
 {
-  "status": 200,
-  "message": {
-    "name" : "Run 1",
-    "description" : "Run 1 description",
-    "creator" : "Austin",,
-    "created_time" : "16000000000",
-    "updated_time" : "16000000000",
-    "run_date" : "3/3/2020",
-    "steps" : [
+    "status": 200,
+    "message": [
         {
-            "name" : "Step 1",
-            "type" : "Dynamic"
-            "description" : "Step 1 description",
-            "instance" : {
-                "name": "Script",
-                "type": "script",
-                "description": "A script",
-                "input_notes" : "Input notes",
-                "output_notes" : "Output notes",
-                "deployment_notes" : "Deployment notes",
-                "origin_notes" : "Origin notes",
-                "input_datasets" : [
-                {
-                    "name": "Input Dataset",
-                    "instance_id": "XXXXX",
-                    "instance_type": "dataset",
-                    "description": "Input dataset"
-                }
-                ],
-                "output_datasets" : [
-                {
-                    "name": "Output Dataset",
-                    "instance_id": "XXXXX",
-                    "instance_type": "dataset",
-                    "description": "Output dataset"
-                }
-                ],
-                "deployments" : [
-                    {
-                    "name": "Deployment",
-                    "instance_id": "XXXXX",
-                    "instance_type": "deployment",
-                    "description": "Deployment"
-                    }
-                ],
-                "origins" : [
-                    {
-                        "name": "Origin",
-                        "instance_id": "XXXXX",
-                        "instance_type": "origin",
-                        "description": "Origin"
-                    }
-                ],
-                "fields" : [
-                    {
-                        "name": "Field 1",
-                        "type": "text",
-                        "description": "Field 1",
-                        "default": "Default"
-                        "value": "Value"
-                    }
-                ],
-                "created_time" : "1620000000",
-                "updated_time" : "1620000000",
-                "run_date" : "01/01/2021",
-                "deleted" : false,
-                "module_name" : "Module",
-                "underlying_resource_id" : "XXXXX",
-                "underlying_resource_version" : "Version 1",
-                "underlying_resource_description" : "Underlying resource",
-                "underlying_resource_content" : [
-                    {
-                        "name": "Content 1",
-                        "version": "Version 1",
-                        "location": "Location 1",
-                        "description": "Content 1"
-                    }
-                ],
-                "underlying_resource_content_notes" : "Content notes"
-            }
+            "name": "Run 1",
+            "creator": "Austin McCoy",
+            "run_date" : "01/01/2021",
+        },
+        {
+            "name": "Run 2",
+            "creator": "Austin McCoy",
+            "run_date" : "01/02/2021",
         }
     ]
-  }
 }
 ```
 
