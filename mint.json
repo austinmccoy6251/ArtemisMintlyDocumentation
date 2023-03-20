@@ -104,7 +104,7 @@
     {
       "group": "Artemis API",
       "pages" : [
-        "API Overview", 
+        "api/api", 
         {
           "group": "API",
            "pages": [
