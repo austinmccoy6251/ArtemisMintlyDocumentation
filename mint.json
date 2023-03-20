@@ -111,7 +111,7 @@
               {
                 "group" : "Resources",
                 "pages" : [
-                  "api/resources/create_resource",
+                  "api/create_resource",
                   "api/resources/query_resource",
                   "api/resources/add_resource_fields",
                   "api/resources/update_resource_fields"
