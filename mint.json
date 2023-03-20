@@ -102,6 +102,22 @@
       "version" : "1.7"
     },
     {
+      "group": "Artemis API",
+      "pages" : [
+        "api", 
+        {
+          "group": "API",
+           "pages": [
+            "api/example_1",
+            "api/example_2",
+            "api/example_3",
+            "api/example_4"
+          ]
+        }
+      ],
+      "version" : "1.7"
+    },
+    {
       "group": "Artemis in Pratice",
       "pages": ["inpractice"],
       "version" : "1.7"
