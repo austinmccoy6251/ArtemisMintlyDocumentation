@@ -40,7 +40,7 @@
       "version" : "1.7"
     },
      {
-      "group": "Networks",
+      "group": "Resources",
       "pages": ["betaresourcecatalog"],
       "version" : "1.7"
     },
