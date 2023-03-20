@@ -63,7 +63,15 @@
     },
      {
       "group": "Pipelines",
-      "pages" : ["PipelinesIntro", "ConstructingPipelines", "RunningAPipeline"],
+      "pages" : ["PipelinesIntro", "ConstructingPipelines", {
+             "group": "Running Pipelines",
+             "pages": [
+                "RunningAPipeline",
+                "creatingpipelineruns",
+                "Documentingpipeparams"
+              ]
+           }
+           ],
       "version" : "1.7"
     },
      {
