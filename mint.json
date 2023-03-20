@@ -39,6 +39,11 @@
       "pages" : ["betaWorkspaces", "betaProjects", "BetaSubprojects", "finder"],
       "version" : "1.7"
     },
+     {
+      "group": "Networks",
+      "pages": ["BetaSubprojects"],
+      "version" : "1.7"
+    },
     {
       "group": "Modules",
       "pages" : [
