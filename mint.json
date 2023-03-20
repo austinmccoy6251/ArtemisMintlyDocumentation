@@ -147,10 +147,7 @@
                 "pages" : [
                   "api/subprojects/create_folder"
                 ]
-              },
-            "api/example_2",
-            "api/example_3",
-            "api/example_4"
+              }
           ]
         }
       ],
