@@ -1,0 +1,322 @@
+---
+title: "Query Pipeline Run"
+api: "GET https://artemisarbackend.com:8080/ext/query_pipeline_run"
+description: "This endpoint queries and returns a specified run of a specified pipeline"
+---
+
+### Body
+
+<ParamField body="api_key" type="string" required>
+  This is the API key for your account. You can obtain this from the "Secrets" tab of your "Settings" page.
+</ParamField>
+
+<ParamField body="subproject_id" type="string" required>
+  This is the id of the subproject the pipeline run resides in. You can obtain this from the URL of the subproject page.
+</ParamField>
+
+<ParamField body="pipeline_id" type="string" required>
+    This is the id of the pipeline that is associated with this run. You can obtain this from the table on the first tab of the pipeline modal.
+</ParamField>
+
+<ParamField body="pipeline_version" type="string" required>
+    This is the version of the pipeline associated with this run. This is the name of the version indicated in the verison dropdown. The default version is "Version 1".
+</ParamField>
+
+<ParamField body="pipeline_run_name" type="string" required>
+    This is the name of the pipeline run to be queried.
+</ParamField>
+
+### Response
+
+<ResponseField name="status" type="number">
+  Indicates whether the call was successful. 200 if successful, 400 if not.
+</ResponseField>
+
+<ResponseField name="message" type="object">
+  Message containing the queried pipeline run.
+  <Expandable title="Pipeline Run Object Structure">
+    <ResponseField body="name" type="string" required>
+        This is the name of the pipeline run
+    </ResponseField>
+    <ResponseField body="description" type="string" optional>
+        This is the description of the pipeline run
+    </ResponseField>
+    <ResponseField body="creator" type="string" optional>
+        The name of the user who created the pipeline run
+    </ResponseField>
+    <ResponseField body="created_time" type="string" optional>
+        The time the pipeline run was created (epoch)
+    </ResponseField>
+    <ResponseField body="updated_time" type="string" optional>
+        The time the pipeline run was last modified (epoch)
+    </ResponseField>
+    <ResponseField body="run_date" type="string" optional>
+        This is the date the pipeline run was run (MM/DD/YYYY)
+    </ResponseField>
+    <ResponseField body="run_date" type="string" optional>
+        This is the date the pipeline run was run (MM/DD/YYYY)
+    </ResponseField>
+    <ResponseField body="steps" type="[Steps]" optional>
+        An array of the different steps in this pipeline run.
+        <Expandable title="Step Structure">
+               <ResponseField name="name" type="string">
+                    The name of the step
+               </ResponseField>
+               <ResponseField name="name" type="string">
+                    The type of the step (Static or Dynamic)
+               </ResponseField>
+               <ResponseField name="description" type="string">
+                    The description of the step
+               </ResponseField>
+                <ResponseField body="instance" type="[Resource instance]" optional>
+                    The resource instance associated with this step
+                    <Expandable title="Resource Instance Structure">
+                        <ResponseField name="name" type="string">
+                        The name of the resource instance.
+                        </ResponseField>
+                        <ResponseField name="description" type="string">
+                            The description of the resource instance
+                        </ResponseField>
+                        <ResponseField name="input_notes" type="string">
+                            Notes on the input datasets of the resource instance
+                        </ResponseField>
+                        <ResponseField name="output_notes" type="string">
+                            Notes on the output artifacts of the resource instance
+                        </ResponseField>
+                        <ResponseField name="deployment_notes" type="string">
+                            Notes on the deployments of the resource instance
+                        </ResponseField>
+                        <ResponseField name="origin_notes" type="string">
+                            Notes on the origins of the resource instance
+                        </ResponseField>
+                        <ResponseField name="input_datasets" type="[Input Dataset]">
+                            The input datasets of the resource instance
+                            <Expandable title="Input Dataset">
+                                <ResponseField name="name" type="string" required>
+                                    The name of the input dataset instance
+                                </ResponseField>
+                                <ResponseField name="instance_id" type="string" optional>
+                                    The instance id of the input dataset instance
+                                </ResponseField>
+                                <ResponseField name="instance_type" type="string" optional>
+                                    The type of the input dataset instance
+                                </ResponseField>
+                                <ResponseField name="description" type="string" optional>
+                                    Description of the relationship with the input dataset instance
+                                </ResponseField>      
+                            </Expandable>
+                        </ResponseField>
+                        <ResponseField name="output_artifacts" type="[Output Artifact]">
+                            The output artifacts of the resource instance
+                            <Expandable title="Output Artifact">
+                                <ResponseField name="name" type="string" required>
+                                    The name of the output artifact instance
+                                </ResponseField>
+                                <ResponseField name="instance_id" type="string" optional>
+                                    The instance id of the output artifact instance
+                                </ResponseField>
+                                <ResponseField name="instance_type" type="string" optional>
+                                    The type of the output artifact instance
+                                </ResponseField>
+                                <ResponseField name="description" type="string" optional>
+                                    Description of the relationship with the output artifact instance
+                                </ResponseField>      
+                            </Expandable>
+                        </ResponseField>
+                        <ResponseField name="content_notes" type="string">
+                            The content notes of the resource instance
+                        </ResponseField>
+                        <ResponseField name="deployments" type="[Deployment]">
+                            The deployments of the resource instance
+                            <Expandable title="Deployment">
+                                <ResponseField name="name" type="string" required>
+                                    The name of the deployment instance
+                                </ResponseField>
+                                <ResponseField name="instance_id" type="string" optional>
+                                    The instance id of the deployment instance
+                                </ResponseField>
+                                <ResponseField name="instance_type" type="string" optional>
+                                    The type of the deployment instance
+                                </ResponseField>
+                                <ResponseField name="description" type="string" optional>
+                                    Description of the relationship with the deployment instance
+                                </ResponseField>      
+                            </Expandable>
+                        </ResponseField>
+                        <ResponseField name="origins" type="[Origin]">
+                            The origins of the resource instance
+                            <Expandable title="Origin">
+                                <ResponseField name="name" type="string" required>
+                                    The name of the origin instance
+                                </ResponseField>
+                                <ResponseField name="instance_id" type="string" optional>
+                                    The instance id of the origin instance
+                                </ResponseField>
+                                <ResponseField name="instance_type" type="string" optional>
+                                    The type of the origin instance
+                                </ResponseField>
+                                <ResponseField name="description" type="string" optional>
+                                    Description of the relationship with the origin instance
+                                </ResponseField>      
+                            </Expandable>
+                        </ResponseField>
+                        <ResponseField name="fields" type="[Field]">
+                            The fields of the resource instance
+                            <Expandable title="Field Structure">
+                                <ResponseField name="name" type="string" required>
+                                The name of the field
+                                </ResponseField>
+                                <ResponseField name="type" type="string" required>
+                                    The type of the field. Acceptable types include: text, number, boolean
+                                </ResponseField>
+                                <ResponseField name="description" type="string" optional default="">
+                                    The description of the field
+                                </ResponseField>
+                                <ResponseField name="default" type="type" optional default="">
+                                    The default value of the field
+                                </ResponseField>
+                            </Expandable>
+                        </ResponseField>
+                        <ResponseField name="underlying_resource_id" type="string">
+                            The id of the resource associated with this resource instance
+                        </ResponseField>
+                        <ResponseField name="underlying_resource_version" type="string">
+                            The version of the resource associated with this resource instance
+                        </ResponseField>
+                        <ResponseField name="underlying_resource_description" type="string">
+                            The description of the resource associated with this resource instance
+                        </ResponseField>
+                        <ResponseField name="underlying_resource_content" type="[Content]">
+                            The content of the resource associated with this resource instance
+                            <Expandable title="Content Structure">
+                                <ResponseField name="name" type="string" required>
+                                The name of the content
+                                </ResponseField>
+                                <ResponseField name="version" type="string" optional>
+                                    The version of the content
+                                </ResponseField>
+                                <ResponseField name="location" type="string" optional>
+                                    The location of the content
+                                </ResponseField>
+                                <ResponseField name="description" type="string" optional>
+                                    The description of the content
+                                </ResponseField>
+                            </Expandable>
+                        </ResponseField>
+                        <ResponseField name="underlying_resource_content_notes" type="string">
+                            The content notes of the resource associated with this resource instance
+                        </ResponseField>
+                    </Expandable>
+                </ResponseField>
+        </Expandable>
+    </ResponseField>
+    </Expandable>
+</ResponseField>
+<RequestExample>
+
+```bash Example Request
+curl --location --request GET 'https://artemisarbackend.com:8080/ext/query_pipeline_run' \
+--header 'Content-Type: application/json' \
+--header 'Authorization: Token <token>' \
+--data-raw '{
+    "api_key": "XXXXX",
+    "subproject_id": "XXXXX",
+    "pipeline_id" : "XXXXX",
+    "pipeline_version" : "Version 1",
+    "pipeline_run_name" : "Run 1"
+}'
+```
+
+</RequestExample>
+
+<ResponseExample>
+
+```json Response
+{
+  "status": 200,
+  "message": {
+    "name" : "Run 1",
+    "description" : "Run 1 description",
+    "creator" : "Austin",,
+    "created_time" : "16000000000",
+    "updated_time" : "16000000000",
+    "run_date" : "3/3/2020",
+    "steps" : [
+        {
+            "name" : "Step 1",
+            "type" : "Dynamic"
+            "description" : "Step 1 description",
+            "instance" : {
+                "name": "Script",
+                "type": "script",
+                "description": "A script",
+                "input_notes" : "Input notes",
+                "output_notes" : "Output notes",
+                "deployment_notes" : "Deployment notes",
+                "origin_notes" : "Origin notes",
+                "input_datasets" : [
+                {
+                    "name": "Input Dataset",
+                    "instance_id": "XXXXX",
+                    "instance_type": "dataset",
+                    "description": "Input dataset"
+                }
+                ],
+                "output_datasets" : [
+                {
+                    "name": "Output Dataset",
+                    "instance_id": "XXXXX",
+                    "instance_type": "dataset",
+                    "description": "Output dataset"
+                }
+                ],
+                "deployments" : [
+                    {
+                    "name": "Deployment",
+                    "instance_id": "XXXXX",
+                    "instance_type": "deployment",
+                    "description": "Deployment"
+                    }
+                ],
+                "origins" : [
+                    {
+                        "name": "Origin",
+                        "instance_id": "XXXXX",
+                        "instance_type": "origin",
+                        "description": "Origin"
+                    }
+                ],
+                "fields" : [
+                    {
+                        "name": "Field 1",
+                        "type": "text",
+                        "description": "Field 1",
+                        "default": "Default"
+                        "value": "Value"
+                    }
+                ],
+                "created_time" : "1620000000",
+                "updated_time" : "1620000000",
+                "run_date" : "01/01/2021",
+                "deleted" : false,
+                "module_name" : "Module",
+                "underlying_resource_id" : "XXXXX",
+                "underlying_resource_version" : "Version 1",
+                "underlying_resource_description" : "Underlying resource",
+                "underlying_resource_content" : [
+                    {
+                        "name": "Content 1",
+                        "version": "Version 1",
+                        "location": "Location 1",
+                        "description": "Content 1"
+                    }
+                ],
+                "underlying_resource_content_notes" : "Content notes"
+            }
+        }
+    ]
+  }
+}
+```
+
+</ResponseExample>

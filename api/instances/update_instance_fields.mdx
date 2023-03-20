@@ -1,0 +1,74 @@
+---
+title: "Update Instance Fields"
+api: "POST https://artemisarbackend.com:8080/ext/update_instance_fields"
+description: "This endpoint updates fields for a specified resource instance."
+---
+
+### Body
+
+<ParamField body="api_key" type="string" required>
+  This is the API key for your account. You can obtain this from the "Secrets" tab of your "Settings" page.
+</ParamField>
+
+<ParamField body="subproject_id" type="string" required>
+  This is the id of the subproject the resource instance resides in. You can obtain this ID from the URL while in the subproject.
+</ParamField>
+
+<ParamField body="instance_id" type="string" required>
+  This is the id of the resource instance to be updated. You can find a resource instance's id by opening the resource and clicking "Edit Details" on the first tab.
+</ParamField>
+
+<ParamField body="fields" type="[Partial Field]" required>
+  An array of partial fields indicating which fields you want to update and the values they should be updated to. The structure of each Partial Field item is detailed below.
+   <Expandable title="Partial Field Structure">
+    <ResponseField name="name" type="string" required>
+      The name of the field
+    </ResponseField>
+     <ResponseField name="value" type="type" optional default="">
+        The updated value for this field
+    </ResponseField>
+  </Expandable>
+</ParamField>
+
+
+### Response
+
+<ResponseField name="status" type="number">
+  Indicates whether the call was successful. 200 if successful, 400 if not.
+</ResponseField>
+
+<ResponseField name="message" type="string">
+  Message saying 'Instance fields updated' if successful, an error message if not.
+</ResponseField>
+
+<RequestExample>
+
+```bash Example Request
+curl --location --request POST 'https://artemisarbackend.com:8080/ext/update_instance_fields' \
+--header 'Content-Type: application/json' \
+--header 'Authorization: Token <token>' \
+--data-raw '{
+    "api_key": "XXXXX",
+    "subproject_id": "XXXXX",
+    "instance_id": "XXXXX",
+    "fields" : [
+      {
+        "name": "Field 1",
+        "value": "1"
+      }
+    ]
+}'
+```
+
+</RequestExample>
+
+<ResponseExample>
+
+```json Response
+{
+  "status": 200,
+  "message": "Instance fields updated"
+}
+```
+
+</ResponseExample>

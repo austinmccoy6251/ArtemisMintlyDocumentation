@@ -108,7 +108,46 @@
         {
           "group": "API",
            "pages": [
-            "example_1",
+              {
+                "group" : "Resources",
+                "pages" : [
+                  "api/resources/create_resource",
+                  "api/resources/query_resource",
+                  "api/resources/add_resource_fields",
+                  "api/resources/update_resource_fields"
+                ]
+              },
+              {
+                "group" : "Instances",
+                "pages" : [
+                  "api/instances/update_instance_fields",
+                  "api/instances/query_instance"
+                ]
+              },
+              {
+                "group" : "Processes",
+                "pages" : [
+                  "api/processes/create_process_run",
+                  "api/processes/query_process_run",
+                  "api/processes/query_process_runs",
+                  "api/processes/update_process_run"
+                ]
+              },
+              {
+                "group" : "Pipelines",
+                "pages" : [
+                  "api/pipelines/create_pipeline_run",
+                  "api/pipelines/query_pipeline_run",
+                  "api/pipelines/query_pipeline_runs",
+                  "api/pipelines/update_pipeline_run"
+                ]
+              },
+              {
+                "group" : "Subprojects",
+                "pages" : [
+                  "api/subprojects/create_folder"
+                ]
+              },
             "api/example_2",
             "api/example_3",
             "api/example_4"
