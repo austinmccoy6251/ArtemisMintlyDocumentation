@@ -106,7 +106,7 @@
       "pages" : [
         "api", 
         {
-          "group": "API Endpoints",
+          "group": "API",
            "pages": [
             "api/example_1",
             "api/example_2",
