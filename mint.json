@@ -41,7 +41,7 @@
     },
      {
       "group": "Networks",
-      "pages": ["BetaSubprojects"],
+      "pages": ["betaresourcecatalog"],
       "version" : "1.7"
     },
     {
