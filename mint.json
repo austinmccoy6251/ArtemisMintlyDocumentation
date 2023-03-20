@@ -108,7 +108,7 @@
         {
           "group": "API",
            "pages": [
-            "api/example_1",
+            "example_1",
             "api/example_2",
             "api/example_3",
             "api/example_4"
