@@ -1,19 +1,32 @@
 ---
 title: "API Overview"
-description: "Example overview page before API endpoints"
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas et eros iaculis tortor dapibus cursus. Curabitur quis sapien nec tortor dictum gravida.
+Artemis provides a comprehensive REST API to create, update, and query different aspects of your Artemis work. Presently, this API is best suited for low-frequency usage (fewer than 10 requests per minute), but batch API endpoints are provided to create, query, and update multiple items in a single request.
 
-```bash
-'Authorization': 'Token <team_token>'
-```
+## API Keys
 
-## API Tokens
+All requests to the Artemis API must include your secret API key which is located in the Artemis Settings page under the "Secrets" tab. This key is unique to each user for logging and permission purposes.
 
-Nullam convallis mauris at nunc consectetur, ac imperdiet leo rutrum. Maecenas cursus purus a pellentesque blandit. Pellentesque vitae lacinia libero, non mollis metus.
+<Frame caption="Here's an example of what your Artemis how Artemis can help your team(s) get organized">
+  <img src="https://d27n7fycrsusaz.cloudfront.net/secrets.png" />
+</Frame>
 
 
 ### Permissions
 
-Etiam lobortis ut odio ut fermentum. Nunc odio velit, sollicitudin at consectetur id, tristique eget turpis. Aliquam at risus vitae dolor sodales venenatis. In hac habitasse platea dictumst.
+The permissions granted to each API key is identical to the permissions granted to the user to whom the key belongs. For example, if a user has the "Admin" role, then the API key created by that user will also have the "Admin" role.
+
+### API Endpoints
+
+A comprehensive list of API endpoints is detailed underneath the "API Endpoints" dropdown underneath this page's tab. Each endpoint is described in detail, including the required parameters, the response, and any errors that may be returned.
+
+### Error Handling
+
+If an error occurs during an API request, the response will contain a JSON object with the following fields:
+```
+{
+  "message": "error message",
+  "status": 400
+}
+```
