@@ -111,41 +111,41 @@
               {
                 "group" : "Resources",
                 "pages" : [
-                  "api/create_resource",
-                  "api/resources/query_resource",
-                  "api/resources/add_resource_fields",
-                  "api/resources/update_resource_fields"
+                  "api_endpoints/create_resource",
+                  "api_endpoints/resources/query_resource",
+                  "api_endpoints/resources/add_resource_fields",
+                  "api_endpoints/resources/update_resource_fields"
                 ]
               },
               {
                 "group" : "Instances",
                 "pages" : [
-                  "api/instances/update_instance_fields",
-                  "api/instances/query_instance"
+                  "api_endpoints/instances/update_instance_fields",
+                  "api_endpoints/instances/query_instance"
                 ]
               },
               {
                 "group" : "Processes",
                 "pages" : [
-                  "api/processes/create_process_run",
-                  "api/processes/query_process_run",
-                  "api/processes/query_process_runs",
-                  "api/processes/update_process_run"
+                  "api_endpoints/processes/create_process_run",
+                  "api_endpoints/processes/query_process_run",
+                  "api_endpoints/processes/query_process_runs",
+                  "api_endpoints/processes/update_process_run"
                 ]
               },
               {
                 "group" : "Pipelines",
                 "pages" : [
-                  "api/pipelines/create_pipeline_run",
-                  "api/pipelines/query_pipeline_run",
-                  "api/pipelines/query_pipeline_runs",
-                  "api/pipelines/update_pipeline_run"
+                  "api_endpoints/pipelines/create_pipeline_run",
+                  "api_endpoints/pipelines/query_pipeline_run",
+                  "api_endpoints/pipelines/query_pipeline_runs",
+                  "api_endpoints/pipelines/update_pipeline_run"
                 ]
               },
               {
                 "group" : "Subprojects",
                 "pages" : [
-                  "api/subprojects/create_folder"
+                  "api_endpoints/subprojects/create_folder"
                 ]
               }
           ]
