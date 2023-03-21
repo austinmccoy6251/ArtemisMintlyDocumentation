@@ -2,7 +2,7 @@
   "name": "Artemis",
   "logo": {
     "light": "/logo/light.svg",
-    "dark": "/logo/dark.svg"
+    "dark": "/logdo/dark.svg"
   },
   "versions": ["1.7","1.6"],
   "favicon": "/favicon.png",
@@ -52,7 +52,6 @@
              "group": "Networks",
              "pages": [
                 "betanetworks",
-                "createmodule",
                 "creatinginstances",
                 "connectinginstances",
                 "documentinginstances"
