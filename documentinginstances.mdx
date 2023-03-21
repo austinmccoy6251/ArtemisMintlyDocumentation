@@ -1,29 +1,27 @@
 ---
 title: "Documenting Instances"
 ---
-Clicking any Instance on your Network will trigger a window like the one seen below to appear. This window has several tabs, each with its own fields to document your work. 
+Creating an Instance and connecting it to your Network essentially leaves you with an icon that points back to a Resource. Now, you need to document some contextual details about that Instance.
 
-<Frame caption="This is the modal that displays details about your Instance">
-  <img src="https://d27n7fycrsusaz.cloudfront.net/documenting+instance+modal.PNG" />
+### If you only read one thing from this page
+Please recall how we let you [create custom fields for your Resource]( https://docs.artemisplatform.com/customresourcefields). This is where those fields come into play. Each Instance will have the same fields available as its underlying Resource. 
+
+This is most used to document parameters. For example: your script may have three possible parameters called P1, P2 and P3. Your instance, likewise, will have P1, P2 and P3 that will be unoccupied (or filled with the default value). These can be used to document the specific parameters of the Instance you just made and can be entered either by hand or via our [API]( https://docs.artemisplatform.com/api).
+
+### Documenting Instances 
+Double clicking any Instance on the Network will reveal a window that looks like the one below. Each tab can contain different types of documentation so you/your teammates can instantly understand how it works.
+<Frame caption="This is what the inside of an Instance looks like with all its tabs">
+  <img src=" https://d27n7fycrsusaz.cloudfront.net/instancetabs.JPG" />
 </Frame>
-This screen shows you details about the resource. Here’s what each tab does, in order of appearance: 
 
-* **Overview Tab:** Displays general information about the Instance, how it's used in context and its underlying Resource.
-
-* **Resource Content Tab:** Reports where the underlying resource is located.
-
-* **Input Datasets:** Indicates which (if any) datasets the Instance relies on. The info on this tab is created by the relationships you define between Instances.
-
-* **Output Artifacts:** Indicates which (if any) Instances are output by the one you’re looking at. The info on this tab is created by the relationships you define between Instances.
-
-* **Origin:** If your Instance was created by another one, that’s reported here. The info on this tab is created by the relationships you define between Instances.
-
-* **Deployments:** If your Instance is used by another Instance, that’s reported here. The info on this tab is created by the relationships you define between Instances.
-
-* **Network:** Clicking this button displays the iNstance on the Network
-
-* **Comments:** Any user can add comments on your Instance
-
-* **History:** This tab reports every action done to an Instance
-
-* **Settings:** Lets you change who can edit the Instance
+Here’s a breakdown of what these tabs do, in order of appearance:
+- **Overview tab:** This tab displays general information about the instance, and any notes you may have created about its underlying Resource.
+- **Underlying Resource Content:** Points to where the underlying Resource is located (GitHub repo, AWS, etc.).
+- **Input Datasets:** If the Instance you’re looking at has any other Instances serving as its input dataset, that will be recorded here.
+- **Output Artifacts:** If the Instance you’re looking at has any other Instances serving as its output artifacts, that will be recorded here.
+- **Origin:** If the Instance you’re looking at has any other Instances serving as its origin, that will be recorded here.
+- **Deployments:** If the Instance you’re looking at is deployed into another Instance, that will be recorded here.
+- **Instance Fields:** These are the custom fields you set up when you made your Resource, explained at greater length above.
+- **Comments:** Users can leave comments on Instances viewable by other users.
+- **History:** Automatically logs everything that happens to/in the Instance, you can also add items manually. 
+- **Settings:** Add other users as editors of your Instance. 
