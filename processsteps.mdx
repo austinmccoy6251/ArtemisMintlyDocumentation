@@ -1,0 +1,10 @@
+---
+title: “Process Views”
+---
+Before you read this section, it’s imperative you’ve already checked out [Network Views]( https://docs.artemisplatform.com/CustomFields) and [Processes]( https://docs.artemisplatform.com/PlaceableProcesses). Process Views are, in every way, just an extension of Network Views. 
+
+Recall that [Processes]( https://docs.artemisplatform.com/PlaceableProcesses) are just sections of your Network that you’re running over and over; the structure remains the same, only parameters change from run to run. Rather than having dozens of identical branches, you can just can just create on process that “stacks” all runs beneath one structure. 
+
+Therefore, when you add one of these Process steps to a view you’re adding both it *and* all the iterations of it from each run of the Process.
+
+The implications of this are simple. For example, if you add a Process step that’s been run 8 times, your View table will reflect 8 rows of this step, each with their own parameters.
