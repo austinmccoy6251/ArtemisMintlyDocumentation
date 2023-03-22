@@ -89,7 +89,7 @@
             "CreatingViews",
             "groups"
           ]
-        },
+        }, "processsteps",
         {
           "group": "Pipeline Views",
            "pages": [
