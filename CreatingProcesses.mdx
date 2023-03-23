@@ -1,11 +1,29 @@
 ---
 title: "Creating Processes"
 ---
-Processes can be placed on Networks to create small Pipelines to contain repeating sections of your work. The demo below will teach you how to create a Process on your Network.
+Processes are created by selecting groups of Instances, designating them as a Process and indicating what role different Instances in the Process play.
 
-After you place a Process, you’ll want to record the parameters used to run it and the results the Processes generates. The next page of our docs covers how to do this using Views! 
+First, CTRL + Click to select multiple Instances. A “Make Process” button will appear at the top of your Network. When you click the button a window will appear asking you to name the Process and select a “folder to store Resources.” 
+
+<Frame caption="Caption Text">
+  <img src="https://d27n7fycrsusaz.cloudfront.net/make+process.JPG" />
+</Frame>/
+
+The folder you select is where Resources created by running your Process will go. Not all Processes create Resources, but if the section of your Network that you’re turning into a Pipeline generates any artifacts those will appear as new Resources in the folder you’re about to select. 
+
+Next, you need to designate which steps of your Process will be created each time it’s run vs which ones will stay exactly the same or only change parameters. We call these dynamic vs static. A good rule that’s true 90% of the time: if the step/Instance is creating something it’s static; if it’s being created it’s dynamic. 
+
+This is very similar to the static/dynamic distinction made when [creating Pipelines]( https://docs.artemisplatform.com/ConstructingPipelines).
+<Card title="Example">
+You’re going to run a part of your Network many times as you tweak the parameters of a script. Each run will produce a new model and graph. The databases and scripts leading up to the new model and graph are static (even if parameters change from run to run). The model and graphs produced are dynamic, as they’re totally different each run. 
+<Frame caption="Illustrated example">
+  <img src=" https://d27n7fycrsusaz.cloudfront.net/example.JPG" />
+</Frame>
+</Card>
 
 ### Walkthrough
+This walkthrough demonstrates how to create a Process on your Network. 
+
 *[Full screen walkthrough here](https://app.supademo.com/demo/WUuN46o2o41RS0Q6mXMvq)*
 
 <iframe src="https://app.supademo.com/embed/WUuN46o2o41RS0Q6mXMvq" frameborder="0" webkitallowfullscreen="true" mozallowfullscreen="true" allowfullscreen style={{"width":"719px","height":"500px","border":"none"}}></iframe>
