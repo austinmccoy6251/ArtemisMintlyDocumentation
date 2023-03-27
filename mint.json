@@ -153,11 +153,6 @@
       "version" : "1.7"
     },
     {
-      "group": "Artemis in Pratice",
-      "pages": ["inpractice"],
-      "version" : "1.7"
-    },
-    {
       "group": "Legal/Privacy",
       "pages": ["legal/user-license-agreement"],
       "version" : "1.7"
