@@ -31,7 +31,7 @@
   "navigation": [
     {
       "group": "Getting Started",
-      "pages" : ["atglancebeta", "needtoknowterms"],
+      "pages" : ["atglancebeta", "needtoknowterms", "SettingsPage"],
       "version" : "1.7"
     },
     {
