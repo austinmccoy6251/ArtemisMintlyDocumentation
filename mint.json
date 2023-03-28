@@ -41,7 +41,7 @@
     },
      {
       "group": "Resources",
-      "pages": ["betaresourcecatalog", "creatingresources", "customresourcefields", "customresourcetypes", "creatingversions"],
+      "pages": ["betaresourcecatalog", "creatingresources", "customresourcefields", "customresourcetypes", "creatingversions", "folders"],
       "version" : "1.7"
     },
     {
